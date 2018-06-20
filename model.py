@@ -33,7 +33,7 @@ import time
 # from keras.models import load_model
 
 BATCH_SIZE = 1024
-EPOCHS = 300
+EPOCHS = 1000
 DROPOUT = 0.5
 
 def SimpleCNN(input_shape, dropout):
@@ -48,20 +48,45 @@ def SimpleCNN(input_shape, dropout):
     model.add(Conv2D(64, (3, 3), activation='elu'))
     model.add(Conv2D(128, (3, 3), activation='elu'))
     model.add(Conv2D(256, (3, 3), activation='relu'))
-    model.add(Dropout(0.7))
+    model.add(Dropout(0.3))
     model.add(Flatten())
-    model.add(Dense(256, activation='elu'))
-    model.add(Dropout(0.5))
+    model.add(Dense(512, activation='elu'))
+    model.add(Dropout(0.3))
     model.add(Dense(128, activation='elu'))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.3))
     model.add(Dense(64, activation='elu'))
-    model.add(Dropout(0.5))
+    model.add(Dropout(0.3))
     model.add(Dense(1))
 
     model.compile(loss='mse', optimizer="adam", metrics=['mse', 'mape'])
     print(model.summary())
     return model
 
+def WorkingCNN(input_shape, dropout):
+    model = Sequential()
+    model.add(Conv2D(8, kernel_size=(5, 5),
+                 activation='elu',
+                 input_shape=input_shape))
+    model.add(Conv2D(16, (5, 5), activation='elu'))
+    model.add(Conv2D(24, (5, 5), activation='elu'))
+    model.add(Conv2D(32, (5, 5), activation='elu'))
+    model.add(Conv2D(48, (3, 3), activation='elu'))
+    model.add(Conv2D(64, (3, 3), activation='elu'))
+    model.add(Conv2D(128, (3, 3), activation='elu'))
+    model.add(Conv2D(256, (3, 3), activation='relu'))
+    model.add(Dropout(0.2))
+    model.add(Flatten())
+    model.add(Dense(256, activation='elu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(128, activation='elu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(64, activation='elu'))
+    model.add(Dropout(0.2))
+    model.add(Dense(1))
+
+    model.compile(loss='mse', optimizer="adam", metrics=['mse', 'mape'])
+    print(model.summary())
+    return model
 
 def LoadData(list, dataset):
     with open(list, 'r') as f:
@@ -103,7 +128,7 @@ def FilterData(images, angles):
     new_angles = []
 
     for img, angle in zip(images, angles):
-        if angle>0.1 or angle<-0.1:
+        if angle>0.15 or angle<-0.15:
             new_angles.append(angle)
             new_images.append(img)
     return np.array(new_images), np.array(new_angles)
@@ -159,8 +184,8 @@ if __name__ == '__main__':
     plt.grid(True)
     # plt.show()
 
-    # filtered = FilterData(data[0], data[1])
-    filtered = [data[0], data[1]]
+    filtered = FilterData(data[0], data[1])
+    # filtered = [data[0], data[1]]
 
     print(filtered[0].shape)
     print(filtered[1].shape)
@@ -208,7 +233,7 @@ if __name__ == '__main__':
     print(filtered[0].shape)
     print(filtered[1].shape)
 
-    model = SimpleCNN((filtered[0].shape[1:]), args.dropout)
+    model = WorkingCNN((filtered[0].shape[1:]), args.dropout)
 
     # returns a compiled model
     # identical to the previous one
@@ -224,14 +249,13 @@ if __name__ == '__main__':
                      'weights.{epoch:04d}-{val_loss:.3f}.hdf5'),
         monitor='val_loss', verbose=0, save_best_only=True,
         save_weights_only=False, mode='auto', period=10)
-    # early_stop = EarlyStopping(monitor='val_loss', patience=50,
-    # verbose=0, mode='auto')
+    early_stop = EarlyStopping(monitor='val_loss', patience=100, verbose=0, mode='auto')
 
     board = TensorBoard(log_dir=args.output,
                         histogram_freq=0, write_graph=True, write_images=True)
 
     model.fit(x=filtered[0], y=filtered[1], batch_size=args.batch,
-              epochs=args.epoch, callbacks=[checkpointer, board], validation_split=0.2)
+              epochs=args.epoch, callbacks=[checkpointer, board, early_stop], validation_split=0.2)
     if args.model:
         model.save(args.model)
     else:
