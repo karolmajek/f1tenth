@@ -15,6 +15,7 @@ import cv2
 import pickle
 import time
 import os
+from models import model001
 
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
@@ -53,34 +54,7 @@ def SimpleCNN(input_shape, dropout):
     return model
 
 
-def Model001(input_shape, dropout):
-    model = Sequential()
-    model.add(Conv2D(8, kernel_size=(5, 5),
-                     activation='elu',
-                     input_shape=input_shape))
-    model.add(Conv2D(16, (5, 5), activation='elu'))
-    model.add(Conv2D(24, (5, 5), activation='elu'))
-    model.add(Conv2D(32, (5, 5), activation='elu'))
-    model.add(Conv2D(48, (3, 3), activation='elu'))
-    model.add(Conv2D(64, (3, 3), activation='elu'))
-    model.add(Conv2D(128, (3, 3), activation='elu'))
-    model.add(Conv2D(256, (3, 3), activation='relu'))
-    model.add(Dropout(0.2))
-    model.add(Flatten())
-    model.add(Dense(256, activation='elu'))
-    model.add(Dropout(0.2))
-    model.add(Dense(128, activation='elu'))
-    model.add(Dropout(0.2))
-    model.add(Dense(64, activation='elu'))
-    model.add(Dropout(0.2))
-    model.add(Dense(1))
-
-    model.compile(loss='mse', optimizer="adam", metrics=['mse', 'mape'])
-    print(model.summary())
-    return model
-
-
-def LoadData(list, dataset):
+def LoadData(list, dataset, procImg_func, procAng_func):
     with open(list, 'r') as f:
         lines = f.readlines()
         print(len(lines), lines[0])
@@ -91,7 +65,7 @@ def LoadData(list, dataset):
     for f in tqdm(lines):
         fname = dataset + '/' + f.strip()
         img = cv2.imread(fname)
-        img = ProcessData(img)
+        img = procImg_func(img)
         # hsv = cv2.cvtColor(img, cv2.COLOR_RGB2HSV)
         # cv2.imshow("processed_h", hsv[:,:,0])
         # cv2.imshow("processed_v", hsv[:,:,2])
@@ -100,15 +74,15 @@ def LoadData(list, dataset):
         # cv2.imshow("processed_s", hsv[:,:,0])
         # cv2.waitKey(0)
         # images.append(img)
-        angles.append(ProcessAngle(int(f.split('_')[1])))
+        angles.append(procAng_func(int(f.split('_')[1])))
         images.append(img/255-0.5)
-        angles.append(- ProcessAngle(int(f.split('_')[1])))
+        angles.append(- procAng_func(int(f.split('_')[1])))
         images.append(img[:, ::-1, :]/255-0.5)
         # images.append(hsv[:, :, 0]/255-0.5)
     return np.array(images), np.array(angles)
 
 
-def ProcessData(img):
+def ProcessImage(img):
     return img[int(img.shape[0]/2)::8, ::16, :]
 
 
@@ -151,7 +125,8 @@ if __name__ == '__main__':
             pickle.UnpicklingError, Exception) as e:
         print(e)
         print("Loading data from images; Pickling")
-        data = LoadData(args.list, args.dataset)
+        data = LoadData(args.list, args.dataset, model001.ProcessImage,
+                        model001.ProcessAngle)
         with open("dataset001.p", 'wb') as f:
             pickle.dump(data, f)
     print(data[0].shape)
@@ -182,7 +157,6 @@ if __name__ == '__main__':
     # plt.show()
 
     filtered = FilterData(data[0], data[1])
-    # filtered = [data[0], data[1]]
 
     print(filtered[0].shape)
     print(filtered[1].shape)
@@ -229,9 +203,9 @@ if __name__ == '__main__':
     print(filtered[0].shape)
     print(filtered[1].shape)
 
-    model_function = Model001
+    model_function = model001.Model001
 
-    model = model_function((filtered[0].shape[1:]), args.dropout)
+    model = model_function((filtered[0].shape[1:]))
     plot_model(model, to_file='images/%s.png' % (model_function.__name__),
                show_shapes=True, show_layer_names=True)
     # returns a compiled model
