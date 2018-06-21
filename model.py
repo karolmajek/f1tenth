@@ -1,46 +1,36 @@
 """Model by Karol Majek."""
+from keras.callbacks import ModelCheckpoint, EarlyStopping, TensorBoard
+from keras.layers import Flatten, Conv2D  # ,Input,  Lambda, ELU, MaxPooling2D
+from keras.layers.core import Dense, Dropout
+from keras.utils.vis_utils import plot_model
+from keras.models import Sequential  # , Model
+from keras.models import load_model
+from keras import backend as K
+import matplotlib.pyplot as plt
 import tensorflow as tf
+from tqdm import tqdm
+import numpy as np
+import argparse
+import cv2
+import pickle
+import time
+import os
+
 config = tf.ConfigProto()
 config.gpu_options.allow_growth = True
 session = tf.Session(config=config)
-from keras import backend as K
 K.set_session(session)
-# import logging
-from keras.layers.core import Dense, Activation, Flatten, Dropout
-from keras.layers.convolutional import Convolution2D
-# from keras.layers.pooling import MaxPooling2D
-from keras.callbacks import ModelCheckpoint, CSVLogger, EarlyStopping, TensorBoard
-# from keras.applications.vgg16 import VGG16
-# from keras.preprocessing import image
-# from keras.applications.vgg16 import preprocess_input
-from keras.layers import Input, Dense
-
-from keras.layers import Input, Dense, GlobalAveragePooling2D
-from keras.layers import Flatten, Lambda, ELU, Conv2D, MaxPooling2D
-from keras.models import Model, Sequential
-from keras.regularizers import l2
-# from keras import backend as K
-import argparse
-import os
-import cv2
-import numpy as np
-from tqdm import tqdm
-import pickle
-import matplotlib.pyplot as plt
-
-# from loader import generate_thunderhill_batches, getDataFromFolder, genSim001, genSim002, genSession5,genPolysync0,genPolysync2,genAll
-import time
-# from keras.models import load_model
 
 BATCH_SIZE = 1024
 EPOCHS = 1000
 DROPOUT = 0.5
 
+
 def SimpleCNN(input_shape, dropout):
     model = Sequential()
     model.add(Conv2D(8, kernel_size=(5, 5),
-                 activation='elu',
-                 input_shape=input_shape))
+                     activation='elu',
+                     input_shape=input_shape))
     model.add(Conv2D(16, (5, 5), activation='elu'))
     model.add(Conv2D(24, (5, 5), activation='elu'))
     model.add(Conv2D(32, (5, 5), activation='elu'))
@@ -62,11 +52,12 @@ def SimpleCNN(input_shape, dropout):
     print(model.summary())
     return model
 
-def WorkingCNN(input_shape, dropout):
+
+def Model001(input_shape, dropout):
     model = Sequential()
     model.add(Conv2D(8, kernel_size=(5, 5),
-                 activation='elu',
-                 input_shape=input_shape))
+                     activation='elu',
+                     input_shape=input_shape))
     model.add(Conv2D(16, (5, 5), activation='elu'))
     model.add(Conv2D(24, (5, 5), activation='elu'))
     model.add(Conv2D(32, (5, 5), activation='elu'))
@@ -87,6 +78,7 @@ def WorkingCNN(input_shape, dropout):
     model.compile(loss='mse', optimizer="adam", metrics=['mse', 'mape'])
     print(model.summary())
     return model
+
 
 def LoadData(list, dataset):
     with open(list, 'r') as f:
@@ -111,7 +103,7 @@ def LoadData(list, dataset):
         angles.append(ProcessAngle(int(f.split('_')[1])))
         images.append(img/255-0.5)
         angles.append(- ProcessAngle(int(f.split('_')[1])))
-        images.append(img[:,::-1,:]/255-0.5)
+        images.append(img[:, ::-1, :]/255-0.5)
         # images.append(hsv[:, :, 0]/255-0.5)
     return np.array(images), np.array(angles)
 
@@ -123,15 +115,17 @@ def ProcessData(img):
 def ProcessAngle(angle):
     return (angle - 800) / (1800-800) - 0.5
 
+
 def FilterData(images, angles):
     new_images = []
     new_angles = []
 
     for img, angle in zip(images, angles):
-        if angle>0.15 or angle<-0.15:
+        if angle > 0.15 or angle < -0.15:
             new_angles.append(angle)
             new_images.append(img)
     return np.array(new_images), np.array(new_angles)
+
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Steering angle model')
@@ -153,7 +147,10 @@ if __name__ == '__main__':
     try:
         with open("dataset001.p", 'rb') as f:
             data = pickle.load(f)
-    except:
+    except (AttributeError,  EOFError, ImportError, IndexError,
+            pickle.UnpicklingError, Exception) as e:
+        print(e)
+        print("Loading data from images; Pickling")
         data = LoadData(args.list, args.dataset)
         with open("dataset001.p", 'wb') as f:
             pickle.dump(data, f)
@@ -172,12 +169,12 @@ if __name__ == '__main__':
     plt.grid(True)
     # plt.show()
 
-
     # the histogram of the data
-    n, bins, patches = plt.hist(100*(data[1]+0.5), 100, facecolor='green', alpha=0.75)
+    n, bins, patches = plt.hist(100*(data[1]+0.5), 100, facecolor='green',
+                                alpha=0.75)
 
     # add a 'best fit' line
-    l = plt.plot(bins)
+    plt.plot(bins)
     plt.xlabel('Stering')
     plt.ylabel('Images count')
     plt.title('Dataset 001 - histogram')
@@ -199,12 +196,12 @@ if __name__ == '__main__':
     plt.grid(True)
     # plt.show()
 
-
     # the histogram of the data
-    n, bins, patches = plt.hist(100*(filtered[1]+0.5), 100, facecolor='green', alpha=0.75)
+    n, bins, patches = plt.hist(100*(filtered[1]+0.5), 100, facecolor='green',
+                                alpha=0.75)
 
     # add a 'best fit' line
-    l = plt.plot(bins)
+    plt.plot(bins)
     plt.xlabel('Stering')
     plt.ylabel('Images count')
     plt.title('Dataset 001 - Histogram filtered')
@@ -225,7 +222,6 @@ if __name__ == '__main__':
     if not os.path.exists(args.output):
         os.makedirs(args.output)
 
-
     print('='*80)
     print(filtered[0].shape)
     filtered = [filtered[0],
@@ -233,8 +229,11 @@ if __name__ == '__main__':
     print(filtered[0].shape)
     print(filtered[1].shape)
 
-    model = WorkingCNN((filtered[0].shape[1:]), args.dropout)
+    model_function = Model001
 
+    model = model_function((filtered[0].shape[1:]), args.dropout)
+    plot_model(model, to_file='images/%s.png' % (model_function.__name__),
+               show_shapes=True, show_layer_names=True)
     # returns a compiled model
     # identical to the previous one
     try:
@@ -249,13 +248,15 @@ if __name__ == '__main__':
                      'weights.{epoch:04d}-{val_loss:.3f}.hdf5'),
         monitor='val_loss', verbose=0, save_best_only=True,
         save_weights_only=False, mode='auto', period=10)
-    early_stop = EarlyStopping(monitor='val_loss', patience=100, verbose=0, mode='auto')
+    early_stop = EarlyStopping(monitor='val_loss', patience=100, verbose=0,
+                               mode='auto')
 
     board = TensorBoard(log_dir=args.output,
                         histogram_freq=0, write_graph=True, write_images=True)
 
     model.fit(x=filtered[0], y=filtered[1], batch_size=args.batch,
-              epochs=args.epoch, callbacks=[checkpointer, board, early_stop], validation_split=0.2)
+              epochs=args.epoch, callbacks=[checkpointer, board, early_stop],
+              validation_split=0.2)
     if args.model:
         model.save(args.model)
     else:

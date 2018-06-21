@@ -28,13 +28,13 @@ python evaluate.py --list images_list.csv --output logs --dataset dataset001/ima
 
 ## Datasets
 
-**Dataset001**
+Go to:
+[Datasets](https://github.com/karolmajek/f1tenth/blob/master/Datasets.md)
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=OgwDYOZj3LQ
-" target="_blank"><img src="http://img.youtube.com/vi/OgwDYOZj3LQ/0.jpg"
-alt="Dataset 001" width="240" height="180" border="10" /></a>
+## Models
 
-[Download Dataset001](https://archive.org/details/20180603152844)
+Go to:
+[Models](https://github.com/karolmajek/f1tenth/blob/master/Models.md)
 
 ## Team members
 - [Karol Majek](https://karolmajek.pl)
