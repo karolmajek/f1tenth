@@ -77,7 +77,7 @@ class move_auto:
 
         self.yaw = angle
 
-        print(self.yaw)
+        rospy.loginfo(self.yaw)
 
         self.msg.channels[self.throttle_channel] = self.throttle
         self.msg.channels[self.steer_channel] = self.yaw

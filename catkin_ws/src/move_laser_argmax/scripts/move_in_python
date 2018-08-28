@@ -1,0 +1,81 @@
+#!/usr/bin/python2.7
+
+from __future__ import division
+
+import numpy as np
+
+import rospy
+from mavros_msgs.msg import OverrideRCIn
+from mavros_msgs.srv import SetMode
+from sensor_msgs.msg import LaserScan
+
+
+class MoveAutoLaserArgmax(object):
+    YAW_MID = 1570
+    MIN_ID = 180
+    MAX_ID = 900
+    GROUPS_COUNT = 10
+    SCANS_IN_GROUP = int((MAX_ID-MIN_ID)/GROUPS_COUNT)
+    THROTTLE_CHANNEL = 2
+    STEER_CHANNEL = 0
+
+    def __init__(self):
+        self.throttle = 0
+        self.yaw = self.YAW_MID
+
+        # ROS-related
+        rospy.init_node('tryrover_python')
+        self.msg = OverrideRCIn()
+
+        self.pub = rospy.Publisher('mavros/rc/override',
+                                   OverrideRCIn,
+                                   queue_size=5)
+
+        self.sub = rospy.Subscriber('/scan',
+                                    LaserScan,
+                                    self.laser_cb,
+                                    queue_size=1)
+
+    def laser_cb(self, msg):
+        scan = np.array(msg.ranges[self.MIN_ID:self.MAX_ID])
+        scan[scan >= msg.range_max] = 0
+        scan[scan <= msg.range_min] = 0
+
+        groups = np.r_[[
+            scan[i*self.SCANS_IN_GROUP:(i+1)*self.SCANS_IN_GROUP].sum()
+            for i in range(self.GROUPS_COUNT)
+        ]]
+
+        max_group_id = np.argmax(np.array(groups))
+        angle = -0.5 + max_group_id / self.GROUPS_COUNT
+
+        if -0.1 <= angle <= 0.1:
+            sum1 = np.sum(scan[:180])
+            sum2 = np.sum(scan[-180:])
+
+            if sum2 > 1.25*sum1:
+                angle += 0.03
+            if sum1 > 1.25*sum2:
+                angle -= 0.03
+
+        self.yaw = int(self.YAW_MID + angle * 800 * 1.5)
+        rospy.loginfo(self.yaw)
+
+        self.msg.channels[self.THROTTLE_CHANNEL] = self.throttle
+        self.msg.channels[self.STEER_CHANNEL] = self.yaw
+        self.pub.publish(self.msg)
+
+
+if __name__ == '__main__':
+    MoveAutoLaserArgmax()
+
+    rospy.wait_for_service('/mavros/set_mode')
+    change_mode = rospy.ServiceProxy('/mavros/set_mode', SetMode)
+
+    answer = change_mode(custom_mode='manual')
+    print(answer)
+
+    try:
+        rospy.spin()
+    except KeyboardInterrupt:
+        print('Shutting down MoveAutoLaserArgmax class')
