@@ -2,6 +2,7 @@
 #define MOVE_AUTO_LASER_ARGMAX
 
 #include <math.h> /* floor */
+#include <assert.h>
 
 #include <ros/ros.h>
 #include <mavros_msgs/OverrideRCIn.h>

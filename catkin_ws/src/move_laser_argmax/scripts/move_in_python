@@ -46,7 +46,7 @@ class MoveAutoLaserArgmax(object):
             for i in range(self.GROUPS_COUNT)
         ]]
 
-        max_group_id = np.argmax(np.array(groups))
+        max_group_id = np.argmax(groups)
         angle = -0.5 + max_group_id / self.GROUPS_COUNT
 
         if -0.1 <= angle <= 0.1:
@@ -59,7 +59,11 @@ class MoveAutoLaserArgmax(object):
                 angle -= 0.03
 
         self.yaw = int(self.YAW_MID + angle * 800 * 1.5)
-        rospy.loginfo(self.yaw)
+        rospy.loginfo(
+            'Yaw: {},'
+            ' max_group_id: {}'
+            .format(self.yaw, max_group_id)
+        )
 
         self.msg.channels[self.THROTTLE_CHANNEL] = self.throttle
         self.msg.channels[self.STEER_CHANNEL] = self.yaw
