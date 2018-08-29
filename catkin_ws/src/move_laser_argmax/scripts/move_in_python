@@ -60,9 +60,9 @@ class MoveAutoLaserArgmax(object):
 
         self.yaw = int(self.YAW_MID + angle * 800 * 1.5)
         rospy.loginfo(
-            'Yaw: {},'
-            ' max_group_id: {}'
-            .format(self.yaw, max_group_id)
+            'yaw: {:.4f}'
+            ' throttle: {:.4f}'
+            .format(self.yaw, self.throttle)
         )
 
         self.msg.channels[self.THROTTLE_CHANNEL] = self.throttle
@@ -79,7 +79,6 @@ if __name__ == '__main__':
     answer = change_mode(custom_mode='manual')
     print(answer)
 
-    try:
-        rospy.spin()
-    except KeyboardInterrupt:
-        print('Shutting down MoveAutoLaserArgmax class')
+    rospy.Rate(10)
+
+    rospy.spin()

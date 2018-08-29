@@ -57,3 +57,4 @@ CATKIN_IGNORE
 
 .idea
 .ipynb_checkpoints
+compare_implementations/*output

@@ -85,8 +85,7 @@ void MoveAutoLaserArgmax::scan_cb(const sensor_msgs::LaserScan& laser_scan_msg) 
 
   yaw = floor(YAW_MID + angle * 800 * 1.5);
 
-  ROS_INFO("Yaw: %d, max_group_id: %d",
-           yaw, max_group_id);
+  ROS_INFO("yaw: %.4f throttle: %.4f", yaw, throttle);
 
   msg.channels[THROTTLE_CHANNEL] = throttle;
   msg.channels[STEER_CHANNEL] = yaw;
@@ -102,7 +101,7 @@ int main(int argc, char **argv) {
   ros::NodeHandle nh;
   MoveAutoLaserArgmax mover(&nh);
 
-  ros::Rate loop_rate(10);
+  ros::Rate loop_rate(40);
 
   ros::spin();
 
