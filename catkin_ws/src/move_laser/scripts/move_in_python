@@ -3,6 +3,7 @@
 from __future__ import division
 
 import numpy as np
+import time
 
 import rospy
 from mavros_msgs.msg import OverrideRCIn
@@ -36,10 +37,12 @@ class MoveAutoLaserArgmax(object):
                                     self.laser_cb,
                                     queue_size=1)
 
-    def laser_cb(self, msg):
-        scan = np.array(msg.ranges[self.MIN_ID:self.MAX_ID])
-        scan[scan >= msg.range_max] = 0
-        scan[scan <= msg.range_min] = 0
+    def laser_cb(self, data):
+        time_delta = time.time()
+
+        scan = np.array(data.ranges[self.MIN_ID:self.MAX_ID])
+        scan[scan >= data.range_max] = 0
+        scan[scan <= data.range_min] = 0
 
         groups = np.r_[[
             scan[i*self.SCANS_IN_GROUP:(i+1)*self.SCANS_IN_GROUP].sum()
@@ -59,10 +62,13 @@ class MoveAutoLaserArgmax(object):
                 angle -= 0.03
 
         self.yaw = int(self.YAW_MID + angle * 800 * 1.5)
+
+        time_delta = time.time() - time_delta
         rospy.loginfo(
             'yaw: {:.4f}'
             ' throttle: {:.4f}'
-            .format(self.yaw, self.throttle)
+            ' time_delta: {:.4f}'
+            .format(self.yaw, self.throttle, time_delta)
         )
 
         self.msg.channels[self.THROTTLE_CHANNEL] = self.throttle
@@ -79,6 +85,6 @@ if __name__ == '__main__':
     answer = change_mode(custom_mode='manual')
     print(answer)
 
-    rospy.Rate(10)
+    rospy.Rate(40)
 
     rospy.spin()

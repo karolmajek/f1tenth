@@ -29,7 +29,7 @@ private:
 
 public:
   MoveAutoLaserArgmax(ros::NodeHandle* nodehandle);
-  void scan_cb(const sensor_msgs::LaserScan& msg);
+  void scan_cb(const sensor_msgs::LaserScan& data);
 };
 
 

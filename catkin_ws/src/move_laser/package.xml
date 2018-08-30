@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package>
-  <name>move_laser_argmax</name>
+  <name>move_laser</name>
   <version>0.0.0</version>
-  <description>The move_laser_argmax package</description>
+  <description>The move_laser package</description>
 
   <maintainer email="ponadto@gmail.com">MTDzi</maintainer>
 

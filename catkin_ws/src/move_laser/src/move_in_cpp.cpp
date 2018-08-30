@@ -31,24 +31,18 @@ MoveAutoLaserArgmax::MoveAutoLaserArgmax(ros::NodeHandle* nodehandle) : nh(*node
 }
 
 
-void MoveAutoLaserArgmax::scan_cb(const sensor_msgs::LaserScan& laser_scan_msg) {
-  std::stringstream log_msg;
-
+void MoveAutoLaserArgmax::scan_cb(const sensor_msgs::LaserScan& data) {
   std::vector<float> scan;
 
-  float total = 0;
-  for (auto x : laser_scan_msg.ranges)
-    total += x;
-
   // Cut out the relevant part of the scan
-  for (int i=0; i<laser_scan_msg.ranges.size(); i++)
-    if (i >= MIN_ID && i <= MAX_ID)
-      scan.push_back(laser_scan_msg.ranges[i]);
+  for (int i=0; i<data.ranges.size(); i++)
+    if (i >= MIN_ID && i <= MAX_ID)  // TODO: just modify the ranges in the `for` loop
+      scan.push_back(data.ranges[i]);
 
   // Zero-out extreme values
   int scan_size = scan.size();
   for (int i=0; i<scan_size; i++)
-    if (scan[i] >= laser_scan_msg.range_max || scan[i] <= laser_scan_msg.range_min)
+    if (scan[i] >= data.range_max || scan[i] <= data.range_min)
       scan[i] = 0;
 
   // Find the group with the largest scan values
