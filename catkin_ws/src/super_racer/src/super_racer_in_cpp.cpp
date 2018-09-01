@@ -43,7 +43,8 @@ void SuperRacer::scan_cb(const sensor_msgs::LaserScan& data) {
   // https://stackoverflow.com/questions/2962785/c-using-clock-to-measure-time-in-multi-threaded-programs/2962914#2962914
   // for a discussion of the solution used below
   time_ = ros::Time::now();
-  double time_delta;
+  double delta_between_callbacks;
+  double delta_within_callback;
 
   std::vector<float> scan;
   // Cut out the relevant part of the scan
@@ -57,13 +58,17 @@ void SuperRacer::scan_cb(const sensor_msgs::LaserScan& data) {
 
   yaw = steerMAX(scan);
 
-  time_delta = time_.toSec() - old_time_.toSec();
-  // std::cout << time_delta << std::endl;
-  ROS_INFO("yaw: %.4f throttle: %.4f time_delta: %.4f", yaw, throttle, time_delta);
-
   msg.channels[THROTTLE_CHANNEL] = throttle;
   msg.channels[STEER_CHANNEL] = yaw;
   mavros_rc_override_pub.publish(msg);
+
+  // Log everything
+  delta_between_callbacks = time_.toSec() - old_time_.toSec();
+  delta_within_callback = ros::Time::now().toSec() - time_.toSec();
+  ROS_INFO(
+    "yaw: %.4f throttle: %.4f delta_between_callbacks: %.4f delta_within_callback: %.4f",
+    yaw, throttle, delta_between_callbacks, delta_within_callback
+  );
 
   old_time_ = time_;
 }

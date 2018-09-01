@@ -56,13 +56,25 @@ class SuperRacer:
         self.msg.channels[self.STEER_CHANNEL] = self.yaw
         self.pub.publish(self.msg)
 
-        time_delta = (self.time.to_nsec() - self.old_time.to_nsec()) / 10**9
-        # print(time_delta)
+        # Log everything
+        delta_between_callbacks = (
+            self.time.to_nsec() - self.old_time.to_nsec()
+        ) / 10**9
+        delta_within_callback = (
+            rospy.Time().now().to_nsec() - self.time.to_nsec()
+        ) / 10**9
+        data_to_log = {
+            'yaw': self.yaw,
+            'throttle': self.throttle,
+            'delta_between_callbacks': delta_between_callbacks,
+            'delta_within_callback': delta_within_callback,
+        }
         rospy.loginfo(
-            'yaw: {:.4f}'
-            ' throttle: {:.4f}'
-            ' time_delta: {:.4f}'
-            .format(self.yaw, self.throttle, time_delta)
+            'yaw: {yaw:.4f}'
+            ' throttle: {throttle:.4f}'
+            ' delta_between_callbacks: {delta_between_callbacks:.4f}'
+            ' delta_within_callback: {delta_within_callback:.4f}'
+            .format(**data_to_log)
         )
         self.old_time = self.time
 

@@ -1,614 +1,654 @@
-[0m[ INFO] [1535780991.757146679]: yaw: 1870.0000 throttle: 0.0000 time_delta: 0.3044[0m
-[0m[ INFO] [1535780991.774892794]: yaw: 1853.0000 throttle: 0.0000 time_delta: 0.0176[0m
-[0m[ INFO] [1535780991.797273011]: yaw: 1830.0000 throttle: 0.0000 time_delta: 0.0225[0m
-[0m[ INFO] [1535780991.853457109]: yaw: 1810.0000 throttle: 0.0000 time_delta: 0.0564[0m
-[0m[ INFO] [1535780991.897286832]: yaw: 1806.0000 throttle: 0.0000 time_delta: 0.0435[0m
-[0m[ INFO] [1535780991.946556852]: yaw: 1808.0000 throttle: 0.0000 time_delta: 0.0493[0m
-[0m[ INFO] [1535780991.947316418]: yaw: 1793.0000 throttle: 0.0000 time_delta: 0.0011[0m
-[0m[ INFO] [1535780991.996931463]: yaw: 1765.0000 throttle: 0.0000 time_delta: 0.0491[0m
-[0m[ INFO] [1535780992.046940664]: yaw: 1748.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535780992.090983188]: yaw: 1731.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535780992.134495301]: yaw: 1705.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780992.178317144]: yaw: 1680.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780992.222753817]: yaw: 1656.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780992.266073494]: yaw: 1580.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780992.267865865]: yaw: 1623.0000 throttle: 0.0000 time_delta: 0.0011[0m
-[0m[ INFO] [1535780992.310096031]: yaw: 1611.0000 throttle: 0.0000 time_delta: 0.0430[0m
-[0m[ INFO] [1535780992.311377536]: yaw: 1601.0000 throttle: 0.0000 time_delta: 0.0006[0m
-[0m[ INFO] [1535780992.347545038]: yaw: 1593.0000 throttle: 0.0000 time_delta: 0.0365[0m
-[0m[ INFO] [1535780992.396419858]: yaw: 1578.0000 throttle: 0.0000 time_delta: 0.0490[0m
-[0m[ INFO] [1535780992.438365311]: yaw: 1576.0000 throttle: 0.0000 time_delta: 0.0419[0m
-[0m[ INFO] [1535780992.482558376]: yaw: 1568.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780992.527011959]: yaw: 1558.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780992.570674200]: yaw: 1548.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780992.571565174]: yaw: 1548.0000 throttle: 0.0000 time_delta: 0.0014[0m
-[0m[ INFO] [1535780992.614307480]: yaw: 1546.0000 throttle: 0.0000 time_delta: 0.0426[0m
-[0m[ INFO] [1535780992.615131999]: yaw: 1545.0000 throttle: 0.0000 time_delta: 0.0009[0m
-[0m[ INFO] [1535780992.622298549]: yaw: 1545.0000 throttle: 0.0000 time_delta: 0.0072[0m
-[0m[ INFO] [1535780992.646369423]: yaw: 1545.0000 throttle: 0.0000 time_delta: 0.0240[0m
-[0m[ INFO] [1535780992.696769081]: yaw: 1546.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535780992.747154183]: yaw: 1540.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535780992.791191334]: yaw: 1548.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535780992.839489867]: yaw: 1556.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780992.878833734]: yaw: 1563.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780992.923185875]: yaw: 1573.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780992.968048138]: yaw: 1578.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780993.011413758]: yaw: 1593.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.054588046]: yaw: 1601.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.098937705]: yaw: 1610.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780993.105454977]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0065[0m
-[0m[ INFO] [1535780993.146667333]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0417[0m
-[0m[ INFO] [1535780993.197167140]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0507[0m
-[0m[ INFO] [1535780993.238327883]: yaw: 1635.0000 throttle: 0.0000 time_delta: 0.0411[0m
-[0m[ INFO] [1535780993.282435037]: yaw: 1646.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.326856698]: yaw: 1660.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780993.371074311]: yaw: 1668.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780993.415638130]: yaw: 1678.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780993.430656097]: yaw: 1685.0000 throttle: 0.0000 time_delta: 0.0158[0m
-[0m[ INFO] [1535780993.487553174]: yaw: 1693.0000 throttle: 0.0000 time_delta: 0.0565[0m
-[0m[ INFO] [1535780993.530581039]: yaw: 1705.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535780993.575340842]: yaw: 1730.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.619361194]: yaw: 1736.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780993.668118841]: yaw: 1750.0000 throttle: 0.0000 time_delta: 0.0487[0m
-[0m[ INFO] [1535780993.717532561]: yaw: 1751.0000 throttle: 0.0000 time_delta: 0.0497[0m
-[0m[ INFO] [1535780993.759283499]: yaw: 1760.0000 throttle: 0.0000 time_delta: 0.0416[0m
-[0m[ INFO] [1535780993.803773170]: yaw: 1766.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780993.847515528]: yaw: 1768.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780993.891476633]: yaw: 1773.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.936563043]: yaw: 1776.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780993.979975518]: yaw: 1775.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780994.024188019]: yaw: 1771.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780994.068850374]: yaw: 1771.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535780994.075752839]: yaw: 1771.0000 throttle: 0.0000 time_delta: 0.0065[0m
-[0m[ INFO] [1535780994.118077169]: yaw: 1768.0000 throttle: 0.0000 time_delta: 0.0433[0m
-[0m[ INFO] [1535780994.159615612]: yaw: 1766.0000 throttle: 0.0000 time_delta: 0.0416[0m
-[0m[ INFO] [1535780994.204434071]: yaw: 1763.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.248466150]: yaw: 1755.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.292433190]: yaw: 1751.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780994.336750976]: yaw: 1745.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780994.380594118]: yaw: 1741.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780994.425159295]: yaw: 1736.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.477350811]: yaw: 1733.0000 throttle: 0.0000 time_delta: 0.0476[0m
-[0m[ INFO] [1535780994.519826578]: yaw: 1730.0000 throttle: 0.0000 time_delta: 0.0468[0m
-[0m[ INFO] [1535780994.561181160]: yaw: 1728.0000 throttle: 0.0000 time_delta: 0.0416[0m
-[0m[ INFO] [1535780994.604819450]: yaw: 1725.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780994.648560446]: yaw: 1723.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.695118283]: yaw: 1720.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.737587096]: yaw: 1720.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780994.781111590]: yaw: 1720.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780994.826816050]: yaw: 1731.0000 throttle: 0.0000 time_delta: 0.0443[0m
-[0m[ INFO] [1535780994.878762070]: yaw: 1741.0000 throttle: 0.0000 time_delta: 0.0482[0m
-[0m[ INFO] [1535780994.920656956]: yaw: 1760.0000 throttle: 0.0000 time_delta: 0.0460[0m
-[0m[ INFO] [1535780994.972946649]: yaw: 1770.0000 throttle: 0.0000 time_delta: 0.0498[0m
-[0m[ INFO] [1535780995.015116534]: yaw: 1784.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.058587497]: yaw: 1820.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780995.064001511]: yaw: 1836.0000 throttle: 0.0000 time_delta: 0.0051[0m
-[0m[ INFO] [1535780995.105245694]: yaw: 1853.0000 throttle: 0.0000 time_delta: 0.0388[0m
-[0m[ INFO] [1535780995.112400012]: yaw: 1881.0000 throttle: 0.0000 time_delta: 0.0079[0m
-[0m[ INFO] [1535780995.136233104]: yaw: 1918.0000 throttle: 0.0000 time_delta: 0.0213[0m
-[0m[ INFO] [1535780995.189011234]: yaw: 1958.0000 throttle: 0.0000 time_delta: 0.0543[0m
-[0m[ INFO] [1535780995.223872353]: yaw: 1999.0000 throttle: 0.0000 time_delta: 0.0406[0m
-[0m[ INFO] [1535780995.267294502]: yaw: 1985.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.310055340]: yaw: 1966.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780995.354298099]: yaw: 1990.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780995.398174946]: yaw: 1993.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780995.446469882]: yaw: 2021.0000 throttle: 0.0000 time_delta: 0.0484[0m
-[0m[ INFO] [1535780995.496502451]: yaw: 2085.0000 throttle: 0.0000 time_delta: 0.0499[0m
-[0m[ INFO] [1535780995.546473527]: yaw: 2086.0000 throttle: 0.0000 time_delta: 0.0458[0m
-[0m[ INFO] [1535780995.590448348]: yaw: 2085.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.635303638]: yaw: 2083.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.678630697]: yaw: 2083.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.683191534]: yaw: 2083.0000 throttle: 0.0000 time_delta: 0.0051[0m
-[0m[ INFO] [1535780995.721273826]: yaw: 2081.0000 throttle: 0.0000 time_delta: 0.0388[0m
-[0m[ INFO] [1535780995.766681619]: yaw: 2083.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780995.809335338]: yaw: 2083.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.855223986]: yaw: 2081.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780995.901627934]: yaw: 2068.0000 throttle: 0.0000 time_delta: 0.0463[0m
-[0m[ INFO] [1535780995.950520828]: yaw: 2065.0000 throttle: 0.0000 time_delta: 0.0499[0m
-[0m[ INFO] [1535780995.996489423]: yaw: 2060.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535780996.041364977]: yaw: 1991.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535780996.089376279]: yaw: 1968.0000 throttle: 0.0000 time_delta: 0.0444[0m
-[0m[ INFO] [1535780996.129007193]: yaw: 2016.0000 throttle: 0.0000 time_delta: 0.0436[0m
-[0m[ INFO] [1535780996.170117867]: yaw: 2088.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535780996.220767949]: yaw: 1431.0000 throttle: 0.0000 time_delta: 0.0436[0m
-[0m[ INFO] [1535780996.269736126]: yaw: 1853.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780996.298086839]: yaw: 1850.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780996.347241549]: yaw: 1853.0000 throttle: 0.0000 time_delta: 0.0490[0m
-[0m[ INFO] [1535780996.396497164]: yaw: 2156.0000 throttle: 0.0000 time_delta: 0.0493[0m
-[0m[ INFO] [1535780996.438220338]: yaw: 2156.0000 throttle: 0.0000 time_delta: 0.0417[0m
-[0m[ INFO] [1535780996.482141626]: yaw: 2166.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780996.526122557]: yaw: 2150.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780996.570118281]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780996.614224282]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780996.658764674]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535780996.701823083]: yaw: 1021.0000 throttle: 0.0000 time_delta: 0.0433[0m
-[0m[ INFO] [1535780996.745488831]: yaw: 973.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780996.745659919]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0002[0m
-[0m[ INFO] [1535780996.796354857]: yaw: 1026.0000 throttle: 0.0000 time_delta: 0.0504[0m
-[0m[ INFO] [1535780996.838094537]: yaw: 976.0000 throttle: 0.0000 time_delta: 0.0417[0m
-[0m[ INFO] [1535780996.882312814]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780996.926178036]: yaw: 1015.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780996.970354542]: yaw: 1013.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780997.014060993]: yaw: 1003.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780997.058243062]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780997.102234972]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780997.146521359]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0444[0m
-[0m[ INFO] [1535780997.196770477]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535780997.238331730]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0416[0m
-[0m[ INFO] [1535780997.282029187]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535780997.326214089]: yaw: 978.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780997.370301279]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780997.417156479]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0473[0m
-[0m[ INFO] [1535780997.457471477]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0403[0m
-[0m[ INFO] [1535780997.464837358]: yaw: 975.0000 throttle: 0.0000 time_delta: 0.0067[0m
-[0m[ INFO] [1535780997.506916712]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0424[0m
-[0m[ INFO] [1535780997.556554664]: yaw: 973.0000 throttle: 0.0000 time_delta: 0.0496[0m
-[0m[ INFO] [1535780997.598146293]: yaw: 978.0000 throttle: 0.0000 time_delta: 0.0417[0m
-[0m[ INFO] [1535780997.642297661]: yaw: 975.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780997.686190674]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780997.730188300]: yaw: 975.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780997.774096299]: yaw: 976.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780997.818134721]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780997.818752741]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0006[0m
-[0m[ INFO] [1535780997.862261097]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0435[0m
-[0m[ INFO] [1535780997.906523490]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0443[0m
-[0m[ INFO] [1535780997.956653686]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535780997.998083427]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0415[0m
-[0m[ INFO] [1535780998.042112839]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.086106931]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780998.130090247]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.174017159]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.218154252]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.262193210]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780998.307237196]: yaw: 986.0000 throttle: 0.0000 time_delta: 0.0449[0m
-[0m[ INFO] [1535780998.350337970]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535780998.394242179]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.438076508]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780998.446251754]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0081[0m
-[0m[ INFO] [1535780998.496367291]: yaw: 971.0000 throttle: 0.0000 time_delta: 0.0502[0m
-[0m[ INFO] [1535780998.542280399]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0458[0m
-[0m[ INFO] [1535780998.586258367]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.630109120]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.678129584]: yaw: 970.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535780998.753468488]: yaw: 1735.0000 throttle: 0.0000 time_delta: 0.0733[0m
-[0m[ INFO] [1535780998.775095160]: yaw: 1811.0000 throttle: 0.0000 time_delta: 0.0213[0m
-[0m[ INFO] [1535780998.818192022]: yaw: 1821.0000 throttle: 0.0000 time_delta: 0.0414[0m
-[0m[ INFO] [1535780998.861504748]: yaw: 1818.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780998.902852861]: yaw: 1721.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.947397731]: yaw: 1721.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780998.950252973]: yaw: 1720.0000 throttle: 0.0000 time_delta: 0.0020[0m
-[0m[ INFO] [1535780998.990700601]: yaw: 1681.0000 throttle: 0.0000 time_delta: 0.0420[0m
-[0m[ INFO] [1535780999.034622159]: yaw: 1715.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780999.078781743]: yaw: 1731.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780999.117330873]: yaw: 1736.0000 throttle: 0.0000 time_delta: 0.0385[0m
-[0m[ INFO] [1535780999.159211335]: yaw: 1728.0000 throttle: 0.0000 time_delta: 0.0416[0m
-[0m[ INFO] [1535780999.204300526]: yaw: 1718.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535780999.247060800]: yaw: 1711.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535780999.290803478]: yaw: 1711.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780999.334623347]: yaw: 1701.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780999.383195153]: yaw: 1598.0000 throttle: 0.0000 time_delta: 0.0481[0m
-[0m[ INFO] [1535780999.427235490]: yaw: 1583.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780999.471908359]: yaw: 1566.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780999.518506943]: yaw: 1545.0000 throttle: 0.0000 time_delta: 0.0466[0m
-[0m[ INFO] [1535780999.568250335]: yaw: 1529.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535780999.611483666]: yaw: 1515.0000 throttle: 0.0000 time_delta: 0.0433[0m
-[0m[ INFO] [1535780999.655162327]: yaw: 1481.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535780999.699094570]: yaw: 1441.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780999.743437961]: yaw: 1396.0000 throttle: 0.0000 time_delta: 0.0443[0m
-[0m[ INFO] [1535780999.786703258]: yaw: 1348.0000 throttle: 0.0000 time_delta: 0.0436[0m
-[0m[ INFO] [1535780999.831228945]: yaw: 1305.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535780999.875394321]: yaw: 1271.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535780999.919729974]: yaw: 1233.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535780999.971872043]: yaw: 1193.0000 throttle: 0.0000 time_delta: 0.0505[0m
-[0m[ INFO] [1535781000.017647736]: yaw: 1168.0000 throttle: 0.0000 time_delta: 0.0482[0m
-[0m[ INFO] [1535781000.060064790]: yaw: 1161.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781000.103010905]: yaw: 1095.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781000.146656988]: yaw: 1046.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781000.191824483]: yaw: 1023.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781000.237568092]: yaw: 1045.0000 throttle: 0.0000 time_delta: 0.0443[0m
-[0m[ INFO] [1535781000.279566043]: yaw: 1006.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781000.322965907]: yaw: 991.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781000.368188580]: yaw: 2025.0000 throttle: 0.0000 time_delta: 0.0447[0m
-[0m[ INFO] [1535781000.417914856]: yaw: 2005.0000 throttle: 0.0000 time_delta: 0.0506[0m
-[0m[ INFO] [1535781000.458289330]: yaw: 1991.0000 throttle: 0.0000 time_delta: 0.0407[0m
-[0m[ INFO] [1535781000.503389066]: yaw: 1956.0000 throttle: 0.0000 time_delta: 0.0448[0m
-[0m[ INFO] [1535781000.547565205]: yaw: 1948.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535781000.592970190]: yaw: 2071.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781000.638210917]: yaw: 1830.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781000.682117551]: yaw: 2011.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781000.725735894]: yaw: 1981.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781000.770810445]: yaw: 1950.0000 throttle: 0.0000 time_delta: 0.0449[0m
-[0m[ INFO] [1535781000.819143707]: yaw: 1935.0000 throttle: 0.0000 time_delta: 0.0497[0m
-[0m[ INFO] [1535781000.860838372]: yaw: 1921.0000 throttle: 0.0000 time_delta: 0.0414[0m
-[0m[ INFO] [1535781000.904357583]: yaw: 1891.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781000.949314413]: yaw: 1863.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781000.994900501]: yaw: 1573.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781001.038049543]: yaw: 1538.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781001.081678420]: yaw: 1505.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781001.124845571]: yaw: 1476.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781001.171185171]: yaw: 1451.0000 throttle: 0.0000 time_delta: 0.0451[0m
-[0m[ INFO] [1535781001.222282084]: yaw: 1440.0000 throttle: 0.0000 time_delta: 0.0512[0m
-[0m[ INFO] [1535781001.267911465]: yaw: 1430.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781001.309117896]: yaw: 1413.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781001.353714315]: yaw: 1398.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781001.394294744]: yaw: 1385.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781001.439456089]: yaw: 1373.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781001.485495374]: yaw: 1365.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781001.529931152]: yaw: 1355.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781001.574807112]: yaw: 1343.0000 throttle: 0.0000 time_delta: 0.0454[0m
-[0m[ INFO] [1535781001.620129915]: yaw: 1330.0000 throttle: 0.0000 time_delta: 0.0453[0m
-[0m[ INFO] [1535781001.672050636]: yaw: 1323.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535781001.713912111]: yaw: 1316.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535781001.756896634]: yaw: 1301.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781001.803416539]: yaw: 1283.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781001.846172587]: yaw: 1266.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781001.890789011]: yaw: 1251.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781001.933836148]: yaw: 1240.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781001.978992630]: yaw: 1228.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781002.022394245]: yaw: 1220.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781002.073331184]: yaw: 1228.0000 throttle: 0.0000 time_delta: 0.0486[0m
-[0m[ INFO] [1535781002.122427260]: yaw: 1213.0000 throttle: 0.0000 time_delta: 0.0503[0m
-[0m[ INFO] [1535781002.166904726]: yaw: 1213.0000 throttle: 0.0000 time_delta: 0.0409[0m
-[0m[ INFO] [1535781002.210908657]: yaw: 1223.0000 throttle: 0.0000 time_delta: 0.0456[0m
-[0m[ INFO] [1535781002.249704511]: yaw: 1233.0000 throttle: 0.0000 time_delta: 0.0424[0m
-[0m[ INFO] [1535781002.295201074]: yaw: 1270.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781002.339659665]: yaw: 1303.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781002.386215705]: yaw: 1355.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781002.427056755]: yaw: 1423.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781002.472010032]: yaw: 1446.0000 throttle: 0.0000 time_delta: 0.0446[0m
-[0m[ INFO] [1535781002.522041955]: yaw: 1488.0000 throttle: 0.0000 time_delta: 0.0501[0m
-[0m[ INFO] [1535781002.563097848]: yaw: 1540.0000 throttle: 0.0000 time_delta: 0.0412[0m
-[0m[ INFO] [1535781002.609461305]: yaw: 1640.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781002.653263528]: yaw: 1760.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781002.690432049]: yaw: 1056.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781002.735574451]: yaw: 1093.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781002.778740043]: yaw: 1150.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781002.824329942]: yaw: 1215.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781002.869099394]: yaw: 1236.0000 throttle: 0.0000 time_delta: 0.0448[0m
-[0m[ INFO] [1535781002.917483045]: yaw: 1270.0000 throttle: 0.0000 time_delta: 0.0498[0m
-[0m[ INFO] [1535781002.959029643]: yaw: 1288.0000 throttle: 0.0000 time_delta: 0.0415[0m
-[0m[ INFO] [1535781003.002738720]: yaw: 1321.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781003.046950551]: yaw: 1370.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781003.090841641]: yaw: 1415.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781003.134560263]: yaw: 1450.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781003.178884104]: yaw: 1481.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781003.222529088]: yaw: 1506.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781003.268372971]: yaw: 1529.0000 throttle: 0.0000 time_delta: 0.0457[0m
-[0m[ INFO] [1535781003.317432065]: yaw: 1543.0000 throttle: 0.0000 time_delta: 0.0491[0m
-[0m[ INFO] [1535781003.358620085]: yaw: 1553.0000 throttle: 0.0000 time_delta: 0.0412[0m
-[0m[ INFO] [1535781003.403132239]: yaw: 1571.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535781003.446645255]: yaw: 1580.0000 throttle: 0.0000 time_delta: 0.0436[0m
-[0m[ INFO] [1535781003.491211913]: yaw: 1605.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781003.535574435]: yaw: 1603.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781003.579237566]: yaw: 1596.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781003.627121713]: yaw: 1588.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781003.672702836]: yaw: 1576.0000 throttle: 0.0000 time_delta: 0.0460[0m
-[0m[ INFO] [1535781003.718088160]: yaw: 1580.0000 throttle: 0.0000 time_delta: 0.0447[0m
-[0m[ INFO] [1535781003.768307163]: yaw: 1578.0000 throttle: 0.0000 time_delta: 0.0502[0m
-[0m[ INFO] [1535781003.810773001]: yaw: 1570.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535781003.855639518]: yaw: 1573.0000 throttle: 0.0000 time_delta: 0.0448[0m
-[0m[ INFO] [1535781003.898580363]: yaw: 1570.0000 throttle: 0.0000 time_delta: 0.0432[0m
-[0m[ INFO] [1535781003.942889697]: yaw: 1575.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781003.990883411]: yaw: 1576.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781004.035869525]: yaw: 1568.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781004.080954894]: yaw: 1556.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781004.122709243]: yaw: 1625.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781004.168673673]: yaw: 1623.0000 throttle: 0.0000 time_delta: 0.0455[0m
-[0m[ INFO] [1535781004.216883298]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0492[0m
-[0m[ INFO] [1535781004.258208961]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781004.303100710]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781004.346629385]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781004.390627289]: yaw: 1623.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781004.435151021]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781004.482537122]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0474[0m
-[0m[ INFO] [1535781004.527064197]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0447[0m
-[0m[ INFO] [1535781004.570615231]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781004.617481101]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0469[0m
-[0m[ INFO] [1535781004.668060713]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781004.710873803]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0432[0m
-[0m[ INFO] [1535781004.754804705]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781004.799351174]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535781004.842797781]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0435[0m
-[0m[ INFO] [1535781004.891162057]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781004.934715192]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781004.978947099]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.026757701]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0479[0m
-[0m[ INFO] [1535781005.070796544]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781005.118121949]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0467[0m
-[0m[ INFO] [1535781005.168030641]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0505[0m
-[0m[ INFO] [1535781005.210709018]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0429[0m
-[0m[ INFO] [1535781005.254678959]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.299070668]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781005.342798438]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.386897353]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781005.430584717]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781005.475028894]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.518811238]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781005.568976647]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781005.619231393]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0503[0m
-[0m[ INFO] [1535781005.663303431]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781005.707213286]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.750659046]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781005.794658655]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781005.838999702]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781005.883049269]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781005.926887718]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781005.971189648]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781006.017334164]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0467[0m
-[0m[ INFO] [1535781006.068072919]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0504[0m
-[0m[ INFO] [1535781006.110635252]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0429[0m
-[0m[ INFO] [1535781006.155192251]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781006.198623533]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781006.243107520]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781006.286648639]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781006.330850904]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781006.374851840]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781006.419019745]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781006.420438817]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0016[0m
-[0m[ INFO] [1535781006.467120558]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0471[0m
-[0m[ INFO] [1535781006.517855120]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781006.558725498]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781006.603045076]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781006.646534801]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781006.690993869]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781006.734745855]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781006.779234410]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781006.823047826]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781006.870006186]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0469[0m
-[0m[ INFO] [1535781006.917948257]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781006.959162168]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0412[0m
-[0m[ INFO] [1535781007.003042018]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781007.047098585]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781007.090882842]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.135543553]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.178807892]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.223074239]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781007.267678628]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0446[0m
-[0m[ INFO] [1535781007.317332932]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781007.358809988]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0414[0m
-[0m[ INFO] [1535781007.402861336]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781007.451101940]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781007.494488209]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.539044529]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.582973096]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781007.626715259]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.671271129]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781007.718940855]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781007.767927364]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0487[0m
-[0m[ INFO] [1535781007.817887444]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781007.858839501]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0411[0m
-[0m[ INFO] [1535781007.902894690]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781007.946862546]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781007.991095359]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781008.036198684]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0452[0m
-[0m[ INFO] [1535781008.078079165]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0426[0m
-[0m[ INFO] [1535781008.122255304]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781008.167965165]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0449[0m
-[0m[ INFO] [1535781008.218688913]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0508[0m
-[0m[ INFO] [1535781008.258986751]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0404[0m
-[0m[ INFO] [1535781008.303093817]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781008.351088122]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781008.395937841]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781008.438805530]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781008.482814883]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781008.526691455]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781008.570682959]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781008.617916448]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0468[0m
-[0m[ INFO] [1535781008.669367629]: yaw: 1623.0000 throttle: 0.0000 time_delta: 0.0508[0m
-[0m[ INFO] [1535781008.710982774]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0424[0m
-[0m[ INFO] [1535781008.755194978]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781008.799165375]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781008.842697461]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781008.887088582]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781008.930881987]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781008.975029926]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.018960852]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.067718971]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0488[0m
-[0m[ INFO] [1535781009.118234688]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0502[0m
-[0m[ INFO] [1535781009.159052024]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0411[0m
-[0m[ INFO] [1535781009.203359692]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781009.247165569]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781009.291193787]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.336505200]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781009.378744825]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.422734267]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781009.469105031]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0455[0m
-[0m[ INFO] [1535781009.516896189]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0493[0m
-[0m[ INFO] [1535781009.557779490]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0408[0m
-[0m[ INFO] [1535781009.603484461]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0450[0m
-[0m[ INFO] [1535781009.646797492]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535781009.690705281]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.734818493]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781009.778747190]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781009.827830876]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0489[0m
-[0m[ INFO] [1535781009.878225130]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781009.917900638]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0407[0m
-[0m[ INFO] [1535781009.962754320]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0444[0m
-[0m[ INFO] [1535781010.007768160]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.054887429]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0481[0m
-[0m[ INFO] [1535781010.099116354]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0444[0m
-[0m[ INFO] [1535781010.143058593]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0436[0m
-[0m[ INFO] [1535781010.187064931]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.230791355]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781010.277732366]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0469[0m
-[0m[ INFO] [1535781010.327893034]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0499[0m
-[0m[ INFO] [1535781010.370609124]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535781010.415832848]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0450[0m
-[0m[ INFO] [1535781010.459028010]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535781010.502698364]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.546872870]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.590703594]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.634749363]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781010.679084502]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781010.728017654]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0490[0m
-[0m[ INFO] [1535781010.778762231]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0506[0m
-[0m[ INFO] [1535781010.819539116]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0408[0m
-[0m[ INFO] [1535781010.863212285]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781010.907013751]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781010.950664751]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781010.998622099]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781011.042613053]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.086645318]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.130757205]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781011.177621971]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0468[0m
-[0m[ INFO] [1535781011.227592440]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0500[0m
-[0m[ INFO] [1535781011.270847867]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0432[0m
-[0m[ INFO] [1535781011.314828044]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.358611616]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.406676528]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781011.450823241]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.495392564]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0443[0m
-[0m[ INFO] [1535781011.538586403]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0435[0m
-[0m[ INFO] [1535781011.583266940]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781011.628444509]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0452[0m
-[0m[ INFO] [1535781011.677818645]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0495[0m
-[0m[ INFO] [1535781011.718866437]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781011.763148936]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.807014284]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781011.850786857]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781011.895516774]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0445[0m
-[0m[ INFO] [1535781011.938839392]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0435[0m
-[0m[ INFO] [1535781011.983385015]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781012.028615618]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0453[0m
-[0m[ INFO] [1535781012.077409036]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0491[0m
-[0m[ INFO] [1535781012.118859757]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0414[0m
-[0m[ INFO] [1535781012.163015090]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781012.206720980]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781012.250863984]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781012.294719596]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781012.338736149]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781012.383153186]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781012.428188509]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0450[0m
-[0m[ INFO] [1535781012.477527914]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0498[0m
-[0m[ INFO] [1535781012.518753309]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781012.562838214]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781012.606802141]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781012.650977478]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781012.694709798]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781012.739032372]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781012.782848385]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781012.828382490]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0455[0m
-[0m[ INFO] [1535781012.877552283]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0492[0m
-[0m[ INFO] [1535781012.918857611]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781012.963098049]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781013.010767288]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0479[0m
-[0m[ INFO] [1535781013.055159828]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781013.098637092]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781013.142665455]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781013.187167943]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781013.231256450]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781013.277395291]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0466[0m
-[0m[ INFO] [1535781013.327598702]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0504[0m
-[0m[ INFO] [1535781013.371126361]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0430[0m
-[0m[ INFO] [1535781013.415064170]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781013.458706901]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781013.503593013]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0444[0m
-[0m[ INFO] [1535781013.547156550]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781013.590610090]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781013.647714954]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0567[0m
-[0m[ INFO] [1535781013.649022939]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0016[0m
-[0m[ INFO] [1535781013.690893661]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0417[0m
-[0m[ INFO] [1535781013.735068516]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781013.737058492]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0023[0m
-[0m[ INFO] [1535781013.779152906]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0418[0m
-[0m[ INFO] [1535781013.787449667]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0086[0m
-[0m[ INFO] [1535781013.838455469]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0509[0m
-[0m[ INFO] [1535781013.878886291]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0405[0m
-[0m[ INFO] [1535781013.926999047]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0480[0m
-[0m[ INFO] [1535781013.971252619]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781014.014741234]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781014.058887184]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781014.102742412]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781014.149098698]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0457[0m
-[0m[ INFO] [1535781014.207783752]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0592[0m
-[0m[ INFO] [1535781014.250743008]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0432[0m
-[0m[ INFO] [1535781014.298171982]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0473[0m
-[0m[ INFO] [1535781014.348844145]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0505[0m
-[0m[ INFO] [1535781014.390582386]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0422[0m
-[0m[ INFO] [1535781014.434731583]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781014.436330108]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0013[0m
-[0m[ INFO] [1535781014.479119998]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0428[0m
-[0m[ INFO] [1535781014.497442857]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0186[0m
-[0m[ INFO] [1535781014.539627399]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0413[0m
-[0m[ INFO] [1535781014.582664231]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781014.626910076]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781014.670678443]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781014.714622990]: yaw: 1615.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781014.758679918]: yaw: 1613.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781014.797389768]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0386[0m
-[0m[ INFO] [1535781014.838873874]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0412[0m
-[0m[ INFO] [1535781014.883198795]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781014.884628632]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0018[0m
-[0m[ INFO] [1535781014.926665547]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0423[0m
-[0m[ INFO] [1535781014.947210928]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0205[0m
-[0m[ INFO] [1535781014.990632337]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781015.034765303]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781015.078584940]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.122557054]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.166964439]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781015.210455455]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781015.257829923]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0468[0m
-[0m[ INFO] [1535781015.307408317]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0499[0m
-[0m[ INFO] [1535781015.350934971]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535781015.394970962]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.438848254]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.483329700]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781015.527257155]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781015.570706544]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781015.617518951]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0466[0m
-[0m[ INFO] [1535781015.667949049]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0502[0m
-[0m[ INFO] [1535781015.711263146]: yaw: 1615.0000 throttle: 0.0000 time_delta: 0.0432[0m
-[0m[ INFO] [1535781015.755051146]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781015.798942846]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781015.843228785]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.887017795]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781015.935599829]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0482[0m
-[0m[ INFO] [1535781015.988310995]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0528[0m
-[0m[ INFO] [1535781016.035378066]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0469[0m
-[0m[ INFO] [1535781016.078950467]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781016.127781474]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0487[0m
-[0m[ INFO] [1535781016.170860119]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0431[0m
-[0m[ INFO] [1535781016.215009256]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781016.259330338]: yaw: 1615.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781016.277639825]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0185[0m
-[0m[ INFO] [1535781016.320285786]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0418[0m
-[0m[ INFO] [1535781016.363002317]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781016.409371279]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781016.451793030]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781016.495266447]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781016.547680283]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0527[0m
-[0m[ INFO] [1535781016.598489031]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0507[0m
-[0m[ INFO] [1535781016.639380055]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0406[0m
-[0m[ INFO] [1535781016.681920189]: yaw: 1616.0000 throttle: 0.0000 time_delta: 0.0437[0m
-[0m[ INFO] [1535781016.725895678]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781016.771383962]: yaw: 1625.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781016.815153868]: yaw: 1623.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781016.859464917]: yaw: 1626.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781016.905693318]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0441[0m
-[0m[ INFO] [1535781016.948584921]: yaw: 1618.0000 throttle: 0.0000 time_delta: 0.0453[0m
-[0m[ INFO] [1535781016.998271666]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0496[0m
-[0m[ INFO] [1535781017.042957815]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0446[0m
-[0m[ INFO] [1535781017.083280919]: yaw: 1620.0000 throttle: 0.0000 time_delta: 0.0406[0m
-[0m[ INFO] [1535781017.127638998]: yaw: 1621.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781017.171200814]: yaw: 1625.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781017.215073316]: yaw: 1625.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781017.259027327]: yaw: 1628.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781017.260367886]: yaw: 1628.0000 throttle: 0.0000 time_delta: 0.0015[0m
-[0m[ INFO] [1535781017.307768097]: yaw: 1630.0000 throttle: 0.0000 time_delta: 0.0472[0m
-[0m[ INFO] [1535781017.351383891]: yaw: 1631.0000 throttle: 0.0000 time_delta: 0.0434[0m
-[0m[ INFO] [1535781017.395524474]: yaw: 1633.0000 throttle: 0.0000 time_delta: 0.0442[0m
-[0m[ INFO] [1535781017.443316814]: yaw: 1633.0000 throttle: 0.0000 time_delta: 0.0477[0m
-[0m[ INFO] [1535781017.486973062]: yaw: 1635.0000 throttle: 0.0000 time_delta: 0.0439[0m
-[0m[ INFO] [1535781017.531535660]: yaw: 1635.0000 throttle: 0.0000 time_delta: 0.0440[0m
-[0m[ INFO] [1535781017.534024125]: yaw: 1636.0000 throttle: 0.0000 time_delta: 0.0021[0m
-[0m[ INFO] [1535781017.575343383]: yaw: 1640.0000 throttle: 0.0000 time_delta: 0.0419[0m
-[0m[ INFO] [1535781017.577510553]: yaw: 1641.0000 throttle: 0.0000 time_delta: 0.0019[0m
-[0m[ INFO] [1535781017.619635299]: yaw: 1658.0000 throttle: 0.0000 time_delta: 0.0421[0m
-[0m[ INFO] [1535781017.621668295]: yaw: 1643.0000 throttle: 0.0000 time_delta: 0.0022[0m
-[0m[ INFO] [1535781017.668764274]: yaw: 1665.0000 throttle: 0.0000 time_delta: 0.0467[0m
-[0m[ INFO] [1535781017.728069788]: yaw: 1666.0000 throttle: 0.0000 time_delta: 0.0591[0m
-[0m[ INFO] [1535781017.764205809]: yaw: 1648.0000 throttle: 0.0000 time_delta: 0.0361[0m
-[0m[ INFO] [1535781017.812171866]: yaw: 1651.0000 throttle: 0.0000 time_delta: 0.0481[0m
-[0m[ INFO] [1535781017.855773785]: yaw: 1680.0000 throttle: 0.0000 time_delta: 0.0438[0m
-[0m[ INFO] [1535781017.858475076]: yaw: 1681.0000 throttle: 0.0000 time_delta: 0.0023[0m
-[0m[ INFO] [1535781017.900536278]: yaw: 1685.0000 throttle: 0.0000 time_delta: 0.0419[0m
+[0m[ INFO] [1535786127.422944514]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.3064 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786127.472856064]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786127.522509575]: yaw: 1615.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786127.522873379]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0005 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786127.551772017]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0289 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786127.571705872]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0200 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786127.622483769]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0506 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786127.672480724]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786127.723278994]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786127.768800205]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0455 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786127.816713836]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786127.861002186]: yaw: 1615.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786127.904920834]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786127.924109929]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0187 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786127.964988464]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786128.008916152]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786128.052990578]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786128.073647160]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0207 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786128.120603958]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0471 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786128.164872395]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786128.208709640]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786128.252065325]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786128.296607234]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786128.340774305]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786128.385744828]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0446 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786128.434081423]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.484526223]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786128.525334246]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.569451753]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786128.613321365]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.657177686]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786128.700940261]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786128.745976698]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0447 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786128.794097492]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.837126755]: yaw: 1615.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.881406749]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.925352650]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786128.969073890]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786129.013019491]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786129.057259313]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.058599559]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0014 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.113944029]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0553 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.157090268]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.201074286]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.252504400]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0523 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786129.297960339]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786129.341111646]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786129.385796206]: yaw: 1615.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786129.404559945]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0185 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786129.445783336]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0414 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786129.489876903]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786129.534671757]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0025[0m
+[0m[ INFO] [1535786129.577408652]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786129.621099358]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786129.673101861]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0524 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786129.725401594]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0513 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786129.764226709]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0401 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786129.810094874]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786129.853496690]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786129.897028515]: yaw: 1625.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786129.940969421]: yaw: 1623.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786129.986126850]: yaw: 1626.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786130.030375228]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786130.073951941]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0446 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786130.124783760]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786130.166129435]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786130.209879251]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786130.252535053]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786130.296123806]: yaw: 1625.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786130.340313419]: yaw: 1625.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786130.385572183]: yaw: 1628.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786130.434199697]: yaw: 1630.0000 throttle: 0.0000 delta_between_callbacks: 0.0488 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786130.477631224]: yaw: 1631.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786130.522183301]: yaw: 1633.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786130.565528513]: yaw: 1633.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786130.609668692]: yaw: 1635.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786130.654514846]: yaw: 1636.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0022[0m
+[0m[ INFO] [1535786130.698033420]: yaw: 1640.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786130.700291004]: yaw: 1641.0000 throttle: 0.0000 delta_between_callbacks: 0.0021 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786130.742932703]: yaw: 1658.0000 throttle: 0.0000 delta_between_callbacks: 0.0418 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786130.747909779]: yaw: 1643.0000 throttle: 0.0000 delta_between_callbacks: 0.0032 delta_within_callback: 0.0045[0m
+[0m[ INFO] [1535786130.794745960]: yaw: 1663.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786130.839216776]: yaw: 1665.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0031[0m
+[0m[ INFO] [1535786130.882578447]: yaw: 1648.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0025[0m
+[0m[ INFO] [1535786130.924219883]: yaw: 1651.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786130.968343390]: yaw: 1680.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786130.977437541]: yaw: 1681.0000 throttle: 0.0000 delta_between_callbacks: 0.0091 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786131.004586391]: yaw: 1685.0000 throttle: 0.0000 delta_between_callbacks: 0.0247 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786131.046181467]: yaw: 1660.0000 throttle: 0.0000 delta_between_callbacks: 0.0424 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786131.095742319]: yaw: 1660.0000 throttle: 0.0000 delta_between_callbacks: 0.0486 delta_within_callback: 0.0029[0m
+[0m[ INFO] [1535786131.138429442]: yaw: 1691.0000 throttle: 0.0000 delta_between_callbacks: 0.0433 delta_within_callback: 0.0023[0m
+[0m[ INFO] [1535786131.182252203]: yaw: 1696.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0021[0m
+[0m[ INFO] [1535786131.226455083]: yaw: 1703.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0023[0m
+[0m[ INFO] [1535786131.268841702]: yaw: 1710.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786131.314712371]: yaw: 1716.0000 throttle: 0.0000 delta_between_callbacks: 0.0444 delta_within_callback: 0.0024[0m
+[0m[ INFO] [1535786131.359886713]: yaw: 1723.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0037[0m
+[0m[ INFO] [1535786131.402588462]: yaw: 1730.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0026[0m
+[0m[ INFO] [1535786131.446636836]: yaw: 1740.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0025[0m
+[0m[ INFO] [1535786131.496781138]: yaw: 1750.0000 throttle: 0.0000 delta_between_callbacks: 0.0490 delta_within_callback: 0.0037[0m
+[0m[ INFO] [1535786131.546745989]: yaw: 1751.0000 throttle: 0.0000 delta_between_callbacks: 0.0497 delta_within_callback: 0.0039[0m
+[0m[ INFO] [1535786131.588253051]: yaw: 1756.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0039[0m
+[0m[ INFO] [1535786131.631283314]: yaw: 1768.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0032[0m
+[0m[ INFO] [1535786131.677028639]: yaw: 1780.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0049[0m
+[0m[ INFO] [1535786131.721151587]: yaw: 1791.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0048[0m
+[0m[ INFO] [1535786131.761546600]: yaw: 1805.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786131.807716666]: yaw: 1820.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0035[0m
+[0m[ INFO] [1535786131.853028391]: yaw: 1833.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0049[0m
+[0m[ INFO] [1535786131.898037888]: yaw: 1853.0000 throttle: 0.0000 delta_between_callbacks: 0.0449 delta_within_callback: 0.0050[0m
+[0m[ INFO] [1535786131.949389201]: yaw: 1860.0000 throttle: 0.0000 delta_between_callbacks: 0.0505 delta_within_callback: 0.0059[0m
+[0m[ INFO] [1535786131.989507057]: yaw: 1876.0000 throttle: 0.0000 delta_between_callbacks: 0.0407 delta_within_callback: 0.0053[0m
+[0m[ INFO] [1535786132.032952801]: yaw: 1895.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0047[0m
+[0m[ INFO] [1535786132.076767105]: yaw: 1920.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0045[0m
+[0m[ INFO] [1535786132.120773284]: yaw: 1955.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0045[0m
+[0m[ INFO] [1535786132.169914912]: yaw: 1998.0000 throttle: 0.0000 delta_between_callbacks: 0.0479 delta_within_callback: 0.0058[0m
+[0m[ INFO] [1535786132.215409034]: yaw: 2045.0000 throttle: 0.0000 delta_between_callbacks: 0.0494 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786132.216907176]: yaw: 2056.0000 throttle: 0.0000 delta_between_callbacks: 0.0022 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786132.264060962]: yaw: 2055.0000 throttle: 0.0000 delta_between_callbacks: 0.0473 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786132.309028219]: yaw: 2053.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0050[0m
+[0m[ INFO] [1535786132.353099681]: yaw: 2051.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0050[0m
+[0m[ INFO] [1535786132.399131904]: yaw: 2048.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0070[0m
+[0m[ INFO] [1535786132.441605213]: yaw: 2046.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0055[0m
+[0m[ INFO] [1535786132.487935799]: yaw: 2045.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0076[0m
+[0m[ INFO] [1535786132.530029787]: yaw: 2033.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0059[0m
+[0m[ INFO] [1535786132.576105692]: yaw: 2041.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0079[0m
+[0m[ INFO] [1535786132.615065069]: yaw: 2056.0000 throttle: 0.0000 delta_between_callbacks: 0.0455 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786132.664968199]: yaw: 2048.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786132.703906399]: yaw: 2010.0000 throttle: 0.0000 delta_between_callbacks: 0.0405 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786132.748016416]: yaw: 1986.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786132.792029253]: yaw: 1950.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786132.838299373]: yaw: 1910.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786132.881520501]: yaw: 1871.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786132.924043745]: yaw: 1836.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786132.973159073]: yaw: 1810.0000 throttle: 0.0000 delta_between_callbacks: 0.0491 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786133.023019972]: yaw: 1796.0000 throttle: 0.0000 delta_between_callbacks: 0.0499 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786133.064025570]: yaw: 1784.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786133.108147115]: yaw: 1765.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786133.152209473]: yaw: 1746.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786133.196470533]: yaw: 1733.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786133.240824496]: yaw: 1718.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786133.289070401]: yaw: 1706.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786133.334208843]: yaw: 1700.0000 throttle: 0.0000 delta_between_callbacks: 0.0449 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786133.335539967]: yaw: 1693.0000 throttle: 0.0000 delta_between_callbacks: 0.0014 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786133.383574819]: yaw: 1688.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786133.425317076]: yaw: 1683.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786133.469042214]: yaw: 1670.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786133.513539660]: yaw: 1658.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786133.557044152]: yaw: 1646.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786133.601296270]: yaw: 1633.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786133.645029482]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786133.689206521]: yaw: 1610.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786133.734775654]: yaw: 1596.0000 throttle: 0.0000 delta_between_callbacks: 0.0455 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786133.784327520]: yaw: 1590.0000 throttle: 0.0000 delta_between_callbacks: 0.0493 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786133.825216363]: yaw: 1585.0000 throttle: 0.0000 delta_between_callbacks: 0.0409 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786133.873359279]: yaw: 1573.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786133.917326902]: yaw: 1561.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786133.918717825]: yaw: 1558.0000 throttle: 0.0000 delta_between_callbacks: 0.0015 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786133.961037733]: yaw: 1543.0000 throttle: 0.0000 delta_between_callbacks: 0.0426 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786134.005199688]: yaw: 1538.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.034431687]: yaw: 1535.0000 throttle: 0.0000 delta_between_callbacks: 0.0289 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786134.084360418]: yaw: 1531.0000 throttle: 0.0000 delta_between_callbacks: 0.0499 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786134.125424927]: yaw: 1525.0000 throttle: 0.0000 delta_between_callbacks: 0.0413 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786134.169011135]: yaw: 1520.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.213072889]: yaw: 1518.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.234817572]: yaw: 1516.0000 throttle: 0.0000 delta_between_callbacks: 0.0214 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786134.275932702]: yaw: 1515.0000 throttle: 0.0000 delta_between_callbacks: 0.0421 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786134.320694662]: yaw: 1511.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786134.365174251]: yaw: 1510.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.409354720]: yaw: 1510.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786134.453035508]: yaw: 1510.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.454424860]: yaw: 1511.0000 throttle: 0.0000 delta_between_callbacks: 0.0012 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786134.497125661]: yaw: 1511.0000 throttle: 0.0000 delta_between_callbacks: 0.0428 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786134.498284594]: yaw: 1511.0000 throttle: 0.0000 delta_between_callbacks: 0.0013 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.509898272]: yaw: 1513.0000 throttle: 0.0000 delta_between_callbacks: 0.0116 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786134.537230855]: yaw: 1516.0000 throttle: 0.0000 delta_between_callbacks: 0.0268 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786134.584958213]: yaw: 1515.0000 throttle: 0.0000 delta_between_callbacks: 0.0477 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786134.635498276]: yaw: 1520.0000 throttle: 0.0000 delta_between_callbacks: 0.0497 delta_within_callback: 0.0022[0m
+[0m[ INFO] [1535786134.677313723]: yaw: 1521.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786134.721237830]: yaw: 1525.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786134.765127723]: yaw: 1535.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786134.809555050]: yaw: 1540.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786134.811186975]: yaw: 1545.0000 throttle: 0.0000 delta_between_callbacks: 0.0019 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786134.836232676]: yaw: 1548.0000 throttle: 0.0000 delta_between_callbacks: 0.0245 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786134.885035437]: yaw: 1553.0000 throttle: 0.0000 delta_between_callbacks: 0.0492 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786134.934458843]: yaw: 1556.0000 throttle: 0.0000 delta_between_callbacks: 0.0490 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786134.977143445]: yaw: 1559.0000 throttle: 0.0000 delta_between_callbacks: 0.0433 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786135.021189440]: yaw: 1566.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786135.065754163]: yaw: 1578.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786135.109693981]: yaw: 1581.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786135.111178574]: yaw: 1590.0000 throttle: 0.0000 delta_between_callbacks: 0.0016 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786135.138447506]: yaw: 1593.0000 throttle: 0.0000 delta_between_callbacks: 0.0274 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786135.184525023]: yaw: 1596.0000 throttle: 0.0000 delta_between_callbacks: 0.0460 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.233971660]: yaw: 1598.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786135.277475464]: yaw: 1601.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786135.321221391]: yaw: 1606.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.365096475]: yaw: 1611.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786135.410458445]: yaw: 1615.0000 throttle: 0.0000 delta_between_callbacks: 0.0447 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786135.453499456]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.497092087]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786135.541434708]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786135.584838491]: yaw: 1618.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786135.634179900]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0494 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786135.683997400]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0495 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.724880926]: yaw: 1610.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786135.768034261]: yaw: 1605.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786135.813311367]: yaw: 1598.0000 throttle: 0.0000 delta_between_callbacks: 0.0444 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.857190630]: yaw: 1591.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786135.900306207]: yaw: 1583.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786135.945010209]: yaw: 1575.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786135.989314871]: yaw: 1566.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786136.044804060]: yaw: 1558.0000 throttle: 0.0000 delta_between_callbacks: 0.0555 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786136.046013119]: yaw: 1553.0000 throttle: 0.0000 delta_between_callbacks: 0.0014 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786136.093716813]: yaw: 1545.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786136.136782905]: yaw: 1541.0000 throttle: 0.0000 delta_between_callbacks: 0.0430 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786136.181277578]: yaw: 1538.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786136.225006290]: yaw: 1535.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786136.268300952]: yaw: 1526.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786136.269207245]: yaw: 1521.0000 throttle: 0.0000 delta_between_callbacks: 0.0007 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786136.313772095]: yaw: 1518.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786136.315684941]: yaw: 1515.0000 throttle: 0.0000 delta_between_callbacks: 0.0018 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786136.317518758]: yaw: 1510.0000 throttle: 0.0000 delta_between_callbacks: 0.0019 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786136.343372949]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0261 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786136.385661527]: yaw: 1503.0000 throttle: 0.0000 delta_between_callbacks: 0.0421 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786136.434702285]: yaw: 1501.0000 throttle: 0.0000 delta_between_callbacks: 0.0493 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786136.477610552]: yaw: 1498.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786136.522333141]: yaw: 1495.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786136.565835390]: yaw: 1489.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786136.609247149]: yaw: 1486.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786136.654425810]: yaw: 1483.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786136.696813021]: yaw: 1480.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786136.741202415]: yaw: 1476.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786136.785116830]: yaw: 1473.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786136.833988606]: yaw: 1471.0000 throttle: 0.0000 delta_between_callbacks: 0.0492 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786136.835756916]: yaw: 1470.0000 throttle: 0.0000 delta_between_callbacks: 0.0012 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786136.884033361]: yaw: 1501.0000 throttle: 0.0000 delta_between_callbacks: 0.0489 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786136.924395827]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0407 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786136.968690895]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.016833876]: yaw: 1513.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786137.060603338]: yaw: 1516.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786137.104987340]: yaw: 1513.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786137.105737275]: yaw: 1513.0000 throttle: 0.0000 delta_between_callbacks: 0.0009 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786137.114739435]: yaw: 1505.0000 throttle: 0.0000 delta_between_callbacks: 0.0089 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786137.140749175]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0262 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.184693744]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.233613273]: yaw: 1505.0000 throttle: 0.0000 delta_between_callbacks: 0.0490 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.276188775]: yaw: 1501.0000 throttle: 0.0000 delta_between_callbacks: 0.0427 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786137.320548893]: yaw: 1496.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.368710216]: yaw: 1495.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786137.413087648]: yaw: 1466.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786137.456905731]: yaw: 1476.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786137.517212887]: yaw: 2163.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0173[0m
+[0m[ INFO] [1535786137.549444797]: yaw: 1643.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0058[0m
+[0m[ INFO] [1535786137.615947957]: yaw: 1625.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0280[0m
+[0m[ INFO] [1535786137.642354323]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0448 delta_within_callback: 0.0096[0m
+[0m[ INFO] [1535786137.704851227]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0500 delta_within_callback: 0.0220[0m
+[0m[ INFO] [1535786137.758933065]: yaw: 1616.0000 throttle: 0.0000 delta_between_callbacks: 0.0502 delta_within_callback: 0.0259[0m
+[0m[ INFO] [1535786137.797810531]: yaw: 1630.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0219[0m
+[0m[ INFO] [1535786137.849669095]: yaw: 1820.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0297[0m
+[0m[ INFO] [1535786137.864298092]: yaw: 1529.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.908634250]: yaw: 1533.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786137.933019005]: yaw: 1538.0000 throttle: 0.0000 delta_between_callbacks: 0.0245 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786137.976541521]: yaw: 1575.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786138.020700349]: yaw: 1573.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.064806153]: yaw: 1595.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.065519901]: yaw: 1606.0000 throttle: 0.0000 delta_between_callbacks: 0.0008 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786138.108970067]: yaw: 1663.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786138.116038342]: yaw: 1678.0000 throttle: 0.0000 delta_between_callbacks: 0.0072 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.141835555]: yaw: 1685.0000 throttle: 0.0000 delta_between_callbacks: 0.0257 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.184707553]: yaw: 1695.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.234354715]: yaw: 1695.0000 throttle: 0.0000 delta_between_callbacks: 0.0497 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.277030097]: yaw: 1715.0000 throttle: 0.0000 delta_between_callbacks: 0.0422 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786138.320656895]: yaw: 1730.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.364665760]: yaw: 1745.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.409222344]: yaw: 1715.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786138.453578362]: yaw: 1781.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786138.497435532]: yaw: 1796.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786138.543630533]: yaw: 1840.0000 throttle: 0.0000 delta_between_callbacks: 0.0470 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786138.594325124]: yaw: 1846.0000 throttle: 0.0000 delta_between_callbacks: 0.0508 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786138.636482930]: yaw: 1841.0000 throttle: 0.0000 delta_between_callbacks: 0.0422 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786138.680703218]: yaw: 1848.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786138.724689346]: yaw: 1843.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786138.767836997]: yaw: 1838.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786138.811755070]: yaw: 1825.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786138.855780193]: yaw: 1815.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786138.899861728]: yaw: 1800.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786138.943787109]: yaw: 1786.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786138.993679956]: yaw: 1760.0000 throttle: 0.0000 delta_between_callbacks: 0.0495 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786139.043315905]: yaw: 1753.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786139.045297205]: yaw: 1743.0000 throttle: 0.0000 delta_between_callbacks: 0.0022 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.092598490]: yaw: 1733.0000 throttle: 0.0000 delta_between_callbacks: 0.0473 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.142819376]: yaw: 1725.0000 throttle: 0.0000 delta_between_callbacks: 0.0502 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.184171341]: yaw: 1716.0000 throttle: 0.0000 delta_between_callbacks: 0.0414 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.229245102]: yaw: 1696.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786139.276813635]: yaw: 1678.0000 throttle: 0.0000 delta_between_callbacks: 0.0478 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786139.320177070]: yaw: 1660.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.364172698]: yaw: 1641.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.409742351]: yaw: 1620.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786139.452042262]: yaw: 1590.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.496004214]: yaw: 1583.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.496459098]: yaw: 1571.0000 throttle: 0.0000 delta_between_callbacks: 0.0005 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.542846320]: yaw: 1564.0000 throttle: 0.0000 delta_between_callbacks: 0.0464 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.603083625]: yaw: 1556.0000 throttle: 0.0000 delta_between_callbacks: 0.0602 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.644043446]: yaw: 1541.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.687988090]: yaw: 1526.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.731893745]: yaw: 1523.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786139.742827600]: yaw: 1521.0000 throttle: 0.0000 delta_between_callbacks: 0.0108 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786139.792996179]: yaw: 1523.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786139.838055603]: yaw: 1523.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786139.881586334]: yaw: 1523.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786139.925581849]: yaw: 1529.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786139.970572383]: yaw: 1538.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0024[0m
+[0m[ INFO] [1535786140.014473998]: yaw: 1546.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0023[0m
+[0m[ INFO] [1535786140.059043432]: yaw: 1551.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786140.067628275]: yaw: 1556.0000 throttle: 0.0000 delta_between_callbacks: 0.0092 delta_within_callback: 0.0022[0m
+[0m[ INFO] [1535786140.116023754]: yaw: 1563.0000 throttle: 0.0000 delta_between_callbacks: 0.0477 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786140.159711698]: yaw: 1563.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0035[0m
+[0m[ INFO] [1535786140.202996872]: yaw: 1581.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0027[0m
+[0m[ INFO] [1535786140.249417294]: yaw: 1688.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0053[0m
+[0m[ INFO] [1535786140.289504092]: yaw: 1713.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786140.297865521]: yaw: 1726.0000 throttle: 0.0000 delta_between_callbacks: 0.0083 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786140.320187066]: yaw: 1738.0000 throttle: 0.0000 delta_between_callbacks: 0.0228 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786140.368690738]: yaw: 1753.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0057[0m
+[0m[ INFO] [1535786140.418730334]: yaw: 1768.0000 throttle: 0.0000 delta_between_callbacks: 0.0506 delta_within_callback: 0.0051[0m
+[0m[ INFO] [1535786140.460190456]: yaw: 1783.0000 throttle: 0.0000 delta_between_callbacks: 0.0426 delta_within_callback: 0.0040[0m
+[0m[ INFO] [1535786140.504315779]: yaw: 1818.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0040[0m
+[0m[ INFO] [1535786140.548721552]: yaw: 1855.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0045[0m
+[0m[ INFO] [1535786140.594469049]: yaw: 1895.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0062[0m
+[0m[ INFO] [1535786140.638681801]: yaw: 1930.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0063[0m
+[0m[ INFO] [1535786140.680045536]: yaw: 1985.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0040[0m
+[0m[ INFO] [1535786140.720918984]: yaw: 2036.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786140.764484696]: yaw: 2020.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786140.814674352]: yaw: 2055.0000 throttle: 0.0000 delta_between_callbacks: 0.0501 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786140.864727047]: yaw: 2058.0000 throttle: 0.0000 delta_between_callbacks: 0.0491 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786140.908596516]: yaw: 2058.0000 throttle: 0.0000 delta_between_callbacks: 0.0409 delta_within_callback: 0.0044[0m
+[0m[ INFO] [1535786140.953872750]: yaw: 2055.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0056[0m
+[0m[ INFO] [1535786140.959770578]: yaw: 2051.0000 throttle: 0.0000 delta_between_callbacks: 0.0059 delta_within_callback: 0.0056[0m
+[0m[ INFO] [1535786140.998728492]: yaw: 2050.0000 throttle: 0.0000 delta_between_callbacks: 0.0379 delta_within_callback: 0.0066[0m
+[0m[ INFO] [1535786141.005175675]: yaw: 2058.0000 throttle: 0.0000 delta_between_callbacks: 0.0069 delta_within_callback: 0.0062[0m
+[0m[ INFO] [1535786141.030053830]: yaw: 2046.0000 throttle: 0.0000 delta_between_callbacks: 0.0238 delta_within_callback: 0.0072[0m
+[0m[ INFO] [1535786141.069997174]: yaw: 2036.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0057[0m
+[0m[ INFO] [1535786141.118857048]: yaw: 2033.0000 throttle: 0.0000 delta_between_callbacks: 0.0487 delta_within_callback: 0.0059[0m
+[0m[ INFO] [1535786141.164314236]: yaw: 2035.0000 throttle: 0.0000 delta_between_callbacks: 0.0433 delta_within_callback: 0.0080[0m
+[0m[ INFO] [1535786141.206037597]: yaw: 2038.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0058[0m
+[0m[ INFO] [1535786141.252063648]: yaw: 2036.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0078[0m
+[0m[ INFO] [1535786141.289410630]: yaw: 2055.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786141.333560049]: yaw: 2015.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786141.376856416]: yaw: 1975.0000 throttle: 0.0000 delta_between_callbacks: 0.0434 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786141.420546959]: yaw: 1961.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786141.464530681]: yaw: 1921.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786141.514185809]: yaw: 1901.0000 throttle: 0.0000 delta_between_callbacks: 0.0492 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786141.563555072]: yaw: 1883.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786141.604792906]: yaw: 1865.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786141.648750159]: yaw: 1836.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786141.693098507]: yaw: 1806.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786141.736570150]: yaw: 1778.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786141.784606929]: yaw: 1745.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786141.828591461]: yaw: 1720.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786141.876762938]: yaw: 1690.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786141.920689363]: yaw: 1663.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786141.974092881]: yaw: 1641.0000 throttle: 0.0000 delta_between_callbacks: 0.0533 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.023874624]: yaw: 1628.0000 throttle: 0.0000 delta_between_callbacks: 0.0498 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.064683694]: yaw: 1605.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786142.109699069]: yaw: 1571.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786142.152817215]: yaw: 1558.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.163215834]: yaw: 1549.0000 throttle: 0.0000 delta_between_callbacks: 0.0106 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786142.224536224]: yaw: 1541.0000 throttle: 0.0000 delta_between_callbacks: 0.0611 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.264754705]: yaw: 1525.0000 throttle: 0.0000 delta_between_callbacks: 0.0403 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786142.308103756]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786142.308598045]: yaw: 1503.0000 throttle: 0.0000 delta_between_callbacks: 0.0004 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786142.353180506]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786142.363623052]: yaw: 1495.0000 throttle: 0.0000 delta_between_callbacks: 0.0107 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786142.413985020]: yaw: 1491.0000 throttle: 0.0000 delta_between_callbacks: 0.0502 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786142.456965099]: yaw: 1489.0000 throttle: 0.0000 delta_between_callbacks: 0.0430 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786142.500408245]: yaw: 1486.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.545375473]: yaw: 1481.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786142.588996417]: yaw: 1488.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786142.632716496]: yaw: 1489.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786142.633858923]: yaw: 1480.0000 throttle: 0.0000 delta_between_callbacks: 0.0010 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786142.677047452]: yaw: 1488.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786142.723884925]: yaw: 1489.0000 throttle: 0.0000 delta_between_callbacks: 0.0470 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786142.774674940]: yaw: 1508.0000 throttle: 0.0000 delta_between_callbacks: 0.0508 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786142.816434333]: yaw: 1496.0000 throttle: 0.0000 delta_between_callbacks: 0.0419 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786142.861440146]: yaw: 1516.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786142.905021155]: yaw: 1531.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786142.949455623]: yaw: 1541.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786142.993737932]: yaw: 1555.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786143.037270666]: yaw: 1571.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786143.080302008]: yaw: 1588.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786143.099630571]: yaw: 1596.0000 throttle: 0.0000 delta_between_callbacks: 0.0192 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786143.123149512]: yaw: 1606.0000 throttle: 0.0000 delta_between_callbacks: 0.0235 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786143.165675571]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786143.214161649]: yaw: 1621.0000 throttle: 0.0000 delta_between_callbacks: 0.0488 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786143.257576286]: yaw: 1628.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786143.304245793]: yaw: 1645.0000 throttle: 0.0000 delta_between_callbacks: 0.0479 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786143.349961706]: yaw: 1665.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786143.393805670]: yaw: 1680.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786143.438734343]: yaw: 1700.0000 throttle: 0.0000 delta_between_callbacks: 0.0450 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786143.480911310]: yaw: 1716.0000 throttle: 0.0000 delta_between_callbacks: 0.0428 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786143.524835599]: yaw: 1731.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786143.574067518]: yaw: 1736.0000 throttle: 0.0000 delta_between_callbacks: 0.0491 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786143.575091890]: yaw: 1745.0000 throttle: 0.0000 delta_between_callbacks: 0.0013 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786143.623226767]: yaw: 1748.0000 throttle: 0.0000 delta_between_callbacks: 0.0484 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786143.664939859]: yaw: 1751.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786143.708591368]: yaw: 1753.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786143.753210695]: yaw: 1755.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786143.796197378]: yaw: 1756.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786143.840112015]: yaw: 1755.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786143.886619168]: yaw: 1748.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0023[0m
+[0m[ INFO] [1535786143.932894747]: yaw: 1740.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786143.993127422]: yaw: 1733.0000 throttle: 0.0000 delta_between_callbacks: 0.0600 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786144.040493512]: yaw: 1723.0000 throttle: 0.0000 delta_between_callbacks: 0.0473 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786144.084372705]: yaw: 1775.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786144.134569101]: yaw: 1770.0000 throttle: 0.0000 delta_between_callbacks: 0.0490 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786144.186850637]: yaw: 1768.0000 throttle: 0.0000 delta_between_callbacks: 0.0512 delta_within_callback: 0.0030[0m
+[0m[ INFO] [1535786144.226706239]: yaw: 1765.0000 throttle: 0.0000 delta_between_callbacks: 0.0402 delta_within_callback: 0.0026[0m
+[0m[ INFO] [1535786144.269753628]: yaw: 1760.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786144.313593588]: yaw: 1753.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786144.358750852]: yaw: 1763.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0026[0m
+[0m[ INFO] [1535786144.415673722]: yaw: 1776.0000 throttle: 0.0000 delta_between_callbacks: 0.0570 delta_within_callback: 0.0025[0m
+[0m[ INFO] [1535786144.458906404]: yaw: 1788.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0026[0m
+[0m[ INFO] [1535786144.503379666]: yaw: 1795.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0030[0m
+[0m[ INFO] [1535786144.545632479]: yaw: 1798.0000 throttle: 0.0000 delta_between_callbacks: 0.0426 delta_within_callback: 0.0027[0m
+[0m[ INFO] [1535786144.587090214]: yaw: 1801.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0029[0m
+[0m[ INFO] [1535786144.632953607]: yaw: 1806.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0048[0m
+[0m[ INFO] [1535786144.675405370]: yaw: 1813.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0031[0m
+[0m[ INFO] [1535786144.719648716]: yaw: 1828.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0034[0m
+[0m[ INFO] [1535786144.764829447]: yaw: 1833.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0047[0m
+[0m[ INFO] [1535786144.770371133]: yaw: 1840.0000 throttle: 0.0000 delta_between_callbacks: 0.0050 delta_within_callback: 0.0052[0m
+[0m[ INFO] [1535786144.784651207]: yaw: 1845.0000 throttle: 0.0000 delta_between_callbacks: 0.0143 delta_within_callback: 0.0052[0m
+[0m[ INFO] [1535786144.807655357]: yaw: 1848.0000 throttle: 0.0000 delta_between_callbacks: 0.0230 delta_within_callback: 0.0051[0m
+[0m[ INFO] [1535786144.847788177]: yaw: 1856.0000 throttle: 0.0000 delta_between_callbacks: 0.0416 delta_within_callback: 0.0037[0m
+[0m[ INFO] [1535786144.898404555]: yaw: 1863.0000 throttle: 0.0000 delta_between_callbacks: 0.0489 delta_within_callback: 0.0054[0m
+[0m[ INFO] [1535786144.942531826]: yaw: 1873.0000 throttle: 0.0000 delta_between_callbacks: 0.0432 delta_within_callback: 0.0063[0m
+[0m[ INFO] [1535786144.984357695]: yaw: 1891.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0042[0m
+[0m[ INFO] [1535786145.032775601]: yaw: 1903.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0087[0m
+[0m[ INFO] [1535786145.075272708]: yaw: 1940.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0071[0m
+[0m[ INFO] [1535786145.109365311]: yaw: 1951.0000 throttle: 0.0000 delta_between_callbacks: 0.0349 delta_within_callback: 0.0063[0m
+[0m[ INFO] [1535786145.159738610]: yaw: 1971.0000 throttle: 0.0000 delta_between_callbacks: 0.0500 delta_within_callback: 0.0067[0m
+[0m[ INFO] [1535786145.197531679]: yaw: 2010.0000 throttle: 0.0000 delta_between_callbacks: 0.0433 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786145.241828830]: yaw: 1970.0000 throttle: 0.0000 delta_between_callbacks: 0.0444 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786145.284527602]: yaw: 1993.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786145.328123065]: yaw: 1981.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786145.364221770]: yaw: 2011.0000 throttle: 0.0000 delta_between_callbacks: 0.0359 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786145.404510380]: yaw: 2040.0000 throttle: 0.0000 delta_between_callbacks: 0.0403 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786145.452918766]: yaw: 2074.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0047[0m
+[0m[ INFO] [1535786145.496747478]: yaw: 2070.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0044[0m
+[0m[ INFO] [1535786145.542654287]: yaw: 2028.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0065[0m
+[0m[ INFO] [1535786145.588012463]: yaw: 2005.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0080[0m
+[0m[ INFO] [1535786145.625029980]: yaw: 2043.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786145.668924736]: yaw: 2010.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786145.714521429]: yaw: 1976.0000 throttle: 0.0000 delta_between_callbacks: 0.0456 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786145.764222118]: yaw: 1958.0000 throttle: 0.0000 delta_between_callbacks: 0.0492 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786145.804312725]: yaw: 1941.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786145.849135186]: yaw: 1916.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786145.896962914]: yaw: 1898.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786145.944870918]: yaw: 1875.0000 throttle: 0.0000 delta_between_callbacks: 0.0478 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786145.989134863]: yaw: 1850.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786146.033433888]: yaw: 1836.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786146.077476086]: yaw: 1825.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786146.123751687]: yaw: 1805.0000 throttle: 0.0000 delta_between_callbacks: 0.0469 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786146.183973481]: yaw: 1790.0000 throttle: 0.0000 delta_between_callbacks: 0.0602 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.225255832]: yaw: 1758.0000 throttle: 0.0000 delta_between_callbacks: 0.0411 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786146.288884340]: yaw: 1665.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0206[0m
+[0m[ INFO] [1535786146.347063648]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0307[0m
+[0m[ INFO] [1535786146.374286336]: yaw: 1488.0000 throttle: 0.0000 delta_between_callbacks: 0.0310 delta_within_callback: 0.0269[0m
+[0m[ INFO] [1535786146.417578044]: yaw: 1470.0000 throttle: 0.0000 delta_between_callbacks: 0.0361 delta_within_callback: 0.0342[0m
+[0m[ INFO] [1535786146.453433799]: yaw: 1446.0000 throttle: 0.0000 delta_between_callbacks: 0.0407 delta_within_callback: 0.0293[0m
+[0m[ INFO] [1535786146.469199373]: yaw: 1608.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.470408673]: yaw: 1588.0000 throttle: 0.0000 delta_between_callbacks: 0.0012 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786146.513062313]: yaw: 1553.0000 throttle: 0.0000 delta_between_callbacks: 0.0427 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.514222510]: yaw: 1535.0000 throttle: 0.0000 delta_between_callbacks: 0.0012 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.557742593]: yaw: 1518.0000 throttle: 0.0000 delta_between_callbacks: 0.0431 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786146.583801542]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0264 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.625304581]: yaw: 1483.0000 throttle: 0.0000 delta_between_callbacks: 0.0413 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786146.668989968]: yaw: 1445.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.713863140]: yaw: 1409.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786146.756971683]: yaw: 1375.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786146.801790730]: yaw: 1366.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786146.849729789]: yaw: 1336.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786146.893370889]: yaw: 1296.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786146.937818069]: yaw: 1291.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786146.994394705]: yaw: 1261.0000 throttle: 0.0000 delta_between_callbacks: 0.0571 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.041339594]: yaw: 1243.0000 throttle: 0.0000 delta_between_callbacks: 0.0468 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786147.089351330]: yaw: 1235.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786147.132955538]: yaw: 1228.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786147.143699627]: yaw: 1235.0000 throttle: 0.0000 delta_between_callbacks: 0.0105 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786147.185451707]: yaw: 1236.0000 throttle: 0.0000 delta_between_callbacks: 0.0415 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786147.229286771]: yaw: 1245.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786147.273105405]: yaw: 1255.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786147.317075572]: yaw: 1268.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786147.360864928]: yaw: 1285.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786147.404694483]: yaw: 1303.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786147.454643760]: yaw: 1325.0000 throttle: 0.0000 delta_between_callbacks: 0.0499 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786147.504276868]: yaw: 1341.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786147.545320284]: yaw: 1355.0000 throttle: 0.0000 delta_between_callbacks: 0.0407 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.589012923]: yaw: 1380.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786147.633257566]: yaw: 1405.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.677338918]: yaw: 1433.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.721100821]: yaw: 1458.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786147.765207378]: yaw: 1485.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.808412040]: yaw: 1515.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786147.852908931]: yaw: 1541.0000 throttle: 0.0000 delta_between_callbacks: 0.0446 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786147.903785278]: yaw: 1556.0000 throttle: 0.0000 delta_between_callbacks: 0.0503 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786147.945174860]: yaw: 1571.0000 throttle: 0.0000 delta_between_callbacks: 0.0411 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786147.989047921]: yaw: 1598.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786148.032128648]: yaw: 1625.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786148.077300760]: yaw: 1653.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786148.121309745]: yaw: 1680.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786148.165357795]: yaw: 1705.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786148.209380082]: yaw: 1726.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786148.254329670]: yaw: 1748.0000 throttle: 0.0000 delta_between_callbacks: 0.0450 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786148.302683712]: yaw: 1755.0000 throttle: 0.0000 delta_between_callbacks: 0.0493 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786148.349002372]: yaw: 1761.0000 throttle: 0.0000 delta_between_callbacks: 0.0457 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786148.393017037]: yaw: 1771.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786148.437208170]: yaw: 1775.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786148.485136612]: yaw: 1776.0000 throttle: 0.0000 delta_between_callbacks: 0.0482 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.529123112]: yaw: 1771.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786148.573015061]: yaw: 1765.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786148.617228288]: yaw: 1753.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.660925213]: yaw: 1740.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.705008336]: yaw: 1723.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.754337409]: yaw: 1715.0000 throttle: 0.0000 delta_between_callbacks: 0.0492 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786148.755602277]: yaw: 1705.0000 throttle: 0.0000 delta_between_callbacks: 0.0013 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786148.802935911]: yaw: 1695.0000 throttle: 0.0000 delta_between_callbacks: 0.0479 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786148.845010084]: yaw: 1683.0000 throttle: 0.0000 delta_between_callbacks: 0.0416 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.889173655]: yaw: 1663.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786148.933695851]: yaw: 1640.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786148.977435035]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786149.021512608]: yaw: 1586.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786149.064760321]: yaw: 1563.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.108735025]: yaw: 1536.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786149.154030452]: yaw: 1513.0000 throttle: 0.0000 delta_between_callbacks: 0.0450 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786149.203974960]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0502 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.245462813]: yaw: 1491.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.288207330]: yaw: 1461.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786149.332017845]: yaw: 1440.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786149.376849004]: yaw: 1416.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.421454818]: yaw: 1403.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.465284153]: yaw: 1388.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.508893053]: yaw: 1380.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.553711694]: yaw: 1378.0000 throttle: 0.0000 delta_between_callbacks: 0.0445 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.603800910]: yaw: 1381.0000 throttle: 0.0000 delta_between_callbacks: 0.0503 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.645250049]: yaw: 1383.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.689207295]: yaw: 1386.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.733179056]: yaw: 1395.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.780898610]: yaw: 1405.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.824790036]: yaw: 1416.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786149.869544698]: yaw: 1431.0000 throttle: 0.0000 delta_between_callbacks: 0.0444 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786149.913720494]: yaw: 1445.0000 throttle: 0.0000 delta_between_callbacks: 0.0446 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786149.914578958]: yaw: 1453.0000 throttle: 0.0000 delta_between_callbacks: 0.0009 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786149.963411722]: yaw: 1468.0000 throttle: 0.0000 delta_between_callbacks: 0.0488 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786150.004567849]: yaw: 1476.0000 throttle: 0.0000 delta_between_callbacks: 0.0412 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786150.048964740]: yaw: 1488.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786150.092838579]: yaw: 1491.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786150.137100003]: yaw: 1508.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786150.180953884]: yaw: 1525.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786150.224796537]: yaw: 1543.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786150.269679376]: yaw: 1558.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786150.312088567]: yaw: 1575.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786150.356505718]: yaw: 1591.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786150.403436870]: yaw: 1606.0000 throttle: 0.0000 delta_between_callbacks: 0.0467 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786150.458055411]: yaw: 1613.0000 throttle: 0.0000 delta_between_callbacks: 0.0544 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786150.500736340]: yaw: 1646.0000 throttle: 0.0000 delta_between_callbacks: 0.0430 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786150.544271813]: yaw: 1630.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786150.588889042]: yaw: 1640.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786150.637411070]: yaw: 1646.0000 throttle: 0.0000 delta_between_callbacks: 0.0483 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786150.681469870]: yaw: 1651.0000 throttle: 0.0000 delta_between_callbacks: 0.0435 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786150.725238233]: yaw: 1743.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0011[0m
+[0m[ INFO] [1535786150.735135312]: yaw: 1743.0000 throttle: 0.0000 delta_between_callbacks: 0.0098 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786150.763028643]: yaw: 1651.0000 throttle: 0.0000 delta_between_callbacks: 0.0277 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786150.805393438]: yaw: 1671.0000 throttle: 0.0000 delta_between_callbacks: 0.0425 delta_within_callback: 0.0013[0m
+[0m[ INFO] [1535786150.855638584]: yaw: 1646.0000 throttle: 0.0000 delta_between_callbacks: 0.0495 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786150.898894748]: yaw: 1661.0000 throttle: 0.0000 delta_between_callbacks: 0.0425 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786150.941327681]: yaw: 1726.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786150.984551883]: yaw: 1716.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786151.029301154]: yaw: 1701.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786151.073513997]: yaw: 1695.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786151.075556520]: yaw: 1691.0000 throttle: 0.0000 delta_between_callbacks: 0.0017 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786151.087007034]: yaw: 1685.0000 throttle: 0.0000 delta_between_callbacks: 0.0113 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786151.111629000]: yaw: 1680.0000 throttle: 0.0000 delta_between_callbacks: 0.0249 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786151.153951600]: yaw: 1673.0000 throttle: 0.0000 delta_between_callbacks: 0.0427 delta_within_callback: 0.0012[0m
+[0m[ INFO] [1535786151.205121337]: yaw: 1663.0000 throttle: 0.0000 delta_between_callbacks: 0.0509 delta_within_callback: 0.0014[0m
+[0m[ INFO] [1535786151.245883173]: yaw: 1660.0000 throttle: 0.0000 delta_between_callbacks: 0.0405 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786151.290264084]: yaw: 1646.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786151.332901480]: yaw: 1636.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786151.378957466]: yaw: 1623.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0028[0m
+[0m[ INFO] [1535786151.421651090]: yaw: 1608.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786151.465940486]: yaw: 1481.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786151.510597021]: yaw: 1471.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0025[0m
+[0m[ INFO] [1535786151.554517637]: yaw: 1463.0000 throttle: 0.0000 delta_between_callbacks: 0.0448 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786151.605105591]: yaw: 1460.0000 throttle: 0.0000 delta_between_callbacks: 0.0502 delta_within_callback: 0.0020[0m
+[0m[ INFO] [1535786151.645770464]: yaw: 1456.0000 throttle: 0.0000 delta_between_callbacks: 0.0409 delta_within_callback: 0.0017[0m
+[0m[ INFO] [1535786151.689654473]: yaw: 1450.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786151.734412938]: yaw: 1445.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0022[0m
+[0m[ INFO] [1535786151.778314848]: yaw: 1441.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0022[0m
+[0m[ INFO] [1535786151.822326926]: yaw: 1440.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0021[0m
+[0m[ INFO] [1535786151.865726593]: yaw: 1438.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0016[0m
+[0m[ INFO] [1535786151.909138939]: yaw: 1435.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786151.955213028]: yaw: 1448.0000 throttle: 0.0000 delta_between_callbacks: 0.0447 delta_within_callback: 0.0021[0m
+[0m[ INFO] [1535786152.003368003]: yaw: 1441.0000 throttle: 0.0000 delta_between_callbacks: 0.0498 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786152.044869315]: yaw: 1443.0000 throttle: 0.0000 delta_between_callbacks: 0.0413 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786152.088689709]: yaw: 1448.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786152.132680552]: yaw: 1453.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786152.176739565]: yaw: 1460.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786152.221391257]: yaw: 1465.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786152.265090274]: yaw: 1473.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786152.312532344]: yaw: 1475.0000 throttle: 0.0000 delta_between_callbacks: 0.0481 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786152.312971315]: yaw: 1481.0000 throttle: 0.0000 delta_between_callbacks: 0.0005 delta_within_callback: 0.0003[0m
+[0m[ INFO] [1535786152.363028775]: yaw: 1481.0000 throttle: 0.0000 delta_between_callbacks: 0.0498 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786152.377715450]: yaw: 1486.0000 throttle: 0.0000 delta_between_callbacks: 0.0144 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786152.434616317]: yaw: 1489.0000 throttle: 0.0000 delta_between_callbacks: 0.0558 delta_within_callback: 0.0018[0m
+[0m[ INFO] [1535786152.480172491]: yaw: 1493.0000 throttle: 0.0000 delta_between_callbacks: 0.0434 delta_within_callback: 0.0040[0m
+[0m[ INFO] [1535786152.523129718]: yaw: 1500.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0030[0m
+[0m[ INFO] [1535786152.566345437]: yaw: 1506.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0021[0m
+[0m[ INFO] [1535786152.608751072]: yaw: 1775.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786152.652428702]: yaw: 1796.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786152.696351750]: yaw: 1820.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786152.740405882]: yaw: 1840.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786152.784554742]: yaw: 1863.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786152.835100847]: yaw: 1888.0000 throttle: 0.0000 delta_between_callbacks: 0.0490 delta_within_callback: 0.0023[0m
+[0m[ INFO] [1535786152.886270870]: yaw: 1896.0000 throttle: 0.0000 delta_between_callbacks: 0.0500 delta_within_callback: 0.0035[0m
+[0m[ INFO] [1535786152.929238122]: yaw: 1908.0000 throttle: 0.0000 delta_between_callbacks: 0.0414 delta_within_callback: 0.0050[0m
+[0m[ INFO] [1535786152.973356468]: yaw: 1938.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0052[0m
+[0m[ INFO] [1535786153.013318745]: yaw: 1966.0000 throttle: 0.0000 delta_between_callbacks: 0.0437 delta_within_callback: 0.0015[0m
+[0m[ INFO] [1535786153.057324188]: yaw: 2015.0000 throttle: 0.0000 delta_between_callbacks: 0.0443 delta_within_callback: 0.0010[0m
+[0m[ INFO] [1535786153.101939138]: yaw: 2048.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0019[0m
+[0m[ INFO] [1535786153.144509158]: yaw: 2041.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786153.197411509]: yaw: 2036.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0054[0m
+[0m[ INFO] [1535786153.247120292]: yaw: 2031.0000 throttle: 0.0000 delta_between_callbacks: 0.0480 delta_within_callback: 0.0071[0m
+[0m[ INFO] [1535786153.288657240]: yaw: 2028.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0048[0m
+[0m[ INFO] [1535786153.292416473]: yaw: 2023.0000 throttle: 0.0000 delta_between_callbacks: 0.0050 delta_within_callback: 0.0036[0m
+[0m[ INFO] [1535786153.336659164]: yaw: 2021.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0036[0m
+[0m[ INFO] [1535786153.384110662]: yaw: 2015.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0081[0m
+[0m[ INFO] [1535786153.426515064]: yaw: 2011.0000 throttle: 0.0000 delta_between_callbacks: 0.0439 delta_within_callback: 0.0066[0m
+[0m[ INFO] [1535786153.469806460]: yaw: 2050.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0058[0m
+[0m[ INFO] [1535786153.513650750]: yaw: 2053.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0056[0m
+[0m[ INFO] [1535786153.552879020]: yaw: 2058.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786153.596826561]: yaw: 2020.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786153.643731659]: yaw: 1976.0000 throttle: 0.0000 delta_between_callbacks: 0.0469 delta_within_callback: 0.0008[0m
+[0m[ INFO] [1535786153.703669523]: yaw: 1955.0000 throttle: 0.0000 delta_between_callbacks: 0.0602 delta_within_callback: 0.0006[0m
+[0m[ INFO] [1535786153.744863673]: yaw: 1911.0000 throttle: 0.0000 delta_between_callbacks: 0.0410 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786153.787882177]: yaw: 1853.0000 throttle: 0.0000 delta_between_callbacks: 0.0436 delta_within_callback: 0.0002[0m
+[0m[ INFO] [1535786153.836983860]: yaw: 1830.0000 throttle: 0.0000 delta_between_callbacks: 0.0484 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786153.844169142]: yaw: 1810.0000 throttle: 0.0000 delta_between_callbacks: 0.0075 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786153.893990185]: yaw: 1791.0000 throttle: 0.0000 delta_between_callbacks: 0.0496 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786153.937152288]: yaw: 1806.0000 throttle: 0.0000 delta_between_callbacks: 0.0429 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786153.980464420]: yaw: 1793.0000 throttle: 0.0000 delta_between_callbacks: 0.0438 delta_within_callback: 0.0005[0m
+[0m[ INFO] [1535786154.024960803]: yaw: 1765.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786154.069153842]: yaw: 1731.0000 throttle: 0.0000 delta_between_callbacks: 0.0441 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786154.113115921]: yaw: 1705.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786154.156576132]: yaw: 1680.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0004[0m
+[0m[ INFO] [1535786154.201135996]: yaw: 1656.0000 throttle: 0.0000 delta_between_callbacks: 0.0440 delta_within_callback: 0.0009[0m
+[0m[ INFO] [1535786154.248721193]: yaw: 1623.0000 throttle: 0.0000 delta_between_callbacks: 0.0478 delta_within_callback: 0.0007[0m
+[0m[ INFO] [1535786154.292209259]: yaw: 1611.0000 throttle: 0.0000 delta_between_callbacks: 0.0442 delta_within_callback: 0.0001[0m
+[0m[ INFO] [1535786154.294249045]: yaw: 1601.0000 throttle: 0.0000 delta_between_callbacks: 0.0019 delta_within_callback: 0.0002[0m
