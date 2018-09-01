@@ -19,10 +19,11 @@ private:
   static constexpr int NUM_PNTS_TO_CHK = 20;
   static constexpr float SAFE_OBSTACLE_DIST1 = 0.3;
   static constexpr float SAFE_OBSTACLE_DIST2 = 0.3;
-  static constexpr float NON_CONT_DIST = 0.3;
+  static constexpr float NON_CONT_DIST = 0.1;
   float throttle;
   float yaw;
   std::vector<float> sin_alpha;
+  ros::Time time_, old_time_;
 
   // ROS-related
   ros::NodeHandle nh;
@@ -31,7 +32,7 @@ private:
   mavros_msgs::OverrideRCIn msg;
 
   float steerMAX(std::vector<float> & scan);
-  bool check_if_reachable(float r1, float r2, float alpha);
+  bool check_if_reachable(float r1, float r2, int alpha);
 
 public:
   SuperRacer(ros::NodeHandle* nodehandle);

@@ -1,9 +1,7 @@
 #include <vector>
 #include <math.h> /* floor, abs */
 #include <assert.h>
-#include <algorithm> /* max_element */
-
-#include <time.h> /* timespec, clock_gettime, CLOCK_MONOTONIC */
+#include <algorithm> /* min_element, max_element */
 
 #include "ros/ros.h"
 #include "ros/console.h"
@@ -20,6 +18,8 @@ SuperRacer::SuperRacer(ros::NodeHandle* nodehandle) : nh(*nodehandle) {
 
   for (int i=0; i<NUM_PNTS_TO_STORE; i++)
     sin_alpha.push_back(std::sin((i+1)*0.25 * PI_BY_180));
+
+  old_time_ = ros::Time::now();
 
   msg = mavros_msgs::OverrideRCIn();
 
@@ -42,37 +42,30 @@ void SuperRacer::scan_cb(const sensor_msgs::LaserScan& data) {
   // Measuring time of execution (and NOT CPU time) is tricky. See:
   // https://stackoverflow.com/questions/2962785/c-using-clock-to-measure-time-in-multi-threaded-programs/2962914#2962914
   // for a discussion of the solution used below
-  struct timespec start, finish;
+  time_ = ros::Time::now();
   double time_delta;
 
-  clock_gettime(CLOCK_MONOTONIC, &start);
-
   std::vector<float> scan;
-
   // Cut out the relevant part of the scan
   float one_scan;
   int margin = 180;
   for (int i=margin; i<data.ranges.size()-margin-1; i++) {
     one_scan = data.ranges[i];
-    if (one_scan > 10)
-      one_scan = 10;
-    else if(one_scan < 0)
-      one_scan = 0;
-
+    one_scan = one_scan < 0 ? 0 : one_scan > 10 ? 10 : one_scan;
     scan.push_back(one_scan);
   }
 
   yaw = steerMAX(scan);
 
-  clock_gettime(CLOCK_MONOTONIC, &finish);
-  time_delta = (finish.tv_sec - start.tv_sec);
-  time_delta += (finish.tv_nsec - start.tv_nsec) / 1000000000.0;
-
+  time_delta = time_.toSec() - old_time_.toSec();
+  // std::cout << time_delta << std::endl;
   ROS_INFO("yaw: %.4f throttle: %.4f time_delta: %.4f", yaw, throttle, time_delta);
 
   msg.channels[THROTTLE_CHANNEL] = throttle;
   msg.channels[STEER_CHANNEL] = yaw;
   mavros_rc_override_pub.publish(msg);
+
+  old_time_ = time_;
 }
 
 
@@ -84,9 +77,7 @@ float SuperRacer::steerMAX(std::vector<float> & scan) {
   int scan_size = scan.size();
   bool is_reachable = false;
 
-  std::vector<int> segs;
-  segs.push_back(0);
-  segs.push_back(scan_size-1);
+  std::vector<int> segs = {0, scan_size-1};
 
   for (int i=1; i<scan_size; i++)
     if (std::abs(scan[i]-scan[i-1]) > NON_CONT_DIST) {
@@ -94,12 +85,25 @@ float SuperRacer::steerMAX(std::vector<float> & scan) {
       segs.push_back(i-1);
     }
 
+  // Assert that scan2 has only non-negative values (very important below)
+  idx = std::distance(
+    scan2.begin(),
+    std::min_element(scan2.begin(), scan2.end())
+  );
+  assert (scan2[idx] >= 0);
+
+
+  int safety_counter = 0;
   while (!is_reachable) {
     // Search for argmax (https://en.cppreference.com/w/cpp/algorithm/max_element)
     idx = std::distance(
-      scan.begin(),
-      std::max_element(scan.begin(), scan.end())
+      scan2.begin(),
+      std::max_element(scan2.begin(), scan2.end())
     );
+    if (scan2[idx] < 0) {
+      ROS_WARN("max(scan2) = %.4f, car is going to stop", scan2[idx]);
+      throttle = 0;
+    }
 
     for (auto s : segs) {
       if (s != idx) {
@@ -110,24 +114,24 @@ float SuperRacer::steerMAX(std::vector<float> & scan) {
         }
       }
     }
-    if (scan2[idx] != -1)
+    // Instead of comparing to -1 (remember, we're dealing with floats),
+    //  we check if it's non-negative
+    if (scan2[idx] >= 0)
       is_reachable = true;
   }
 
   yaw = 1.0 * idx / scan_size - 0.5;
 
-  if (yaw > 0.5)
-    yaw = 0.5;
-  else if (yaw < -0.5)
-    yaw = -0.5;
+  // Clip the yaw
+  yaw = yaw < -0.5 ? -0.5 : yaw > 0.5 ? 0.5 : yaw;
 
   return floor(yaw*1200) + YAW_MID;
 }
 
 
-bool SuperRacer::check_if_reachable(float r1, float r2, float alpha) {
+bool SuperRacer::check_if_reachable(float r1, float r2, int alpha) {
   // TODO(MD): Review this method
-  if (r1-SAFE_OBSTACLE_DIST1 < r2)
+  if (r1 < r2 + SAFE_OBSTACLE_DIST1)
     return true;
   else
     return (r2*sin_alpha[alpha] > SAFE_OBSTACLE_DIST2);
