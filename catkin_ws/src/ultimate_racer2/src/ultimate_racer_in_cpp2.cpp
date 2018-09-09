@@ -6,6 +6,7 @@
 #include "ros/ros.h"
 #include "ros/console.h"
 #include <std_msgs/UInt16.h>
+#include <std_msgs/UInt32.h>
 #include <std_msgs/Float32.h>
 
 #include "ultimate_racer_in_cpp2.h"
@@ -49,7 +50,7 @@ UltimateRacer::UltimateRacer(
   old_time_ = ros::Time::now();
   last_stop_msg_ts = ros::Time::now().toSec();
 
-  pub_esc = nh.advertise<std_msgs::UInt16>(
+  pub_esc = nh.advertise<std_msgs::UInt32>(
     "/esc",
     1
   );
@@ -105,7 +106,8 @@ void UltimateRacer::scan_cb(const sensor_msgs::LaserScan & data) {
   );
   if (min_central_value < SAFE_OBSTACLE_DIST3) {
     throttle = ESC_BRAKE;
-    pub_esc.publish(throttle);
+    tmp_uint16.data = throttle;
+    pub_esc.publish(tmp_uint16);
     // TODO: shouldn't this result in a `return`?
   }
 
@@ -157,8 +159,10 @@ void UltimateRacer::scan_cb(const sensor_msgs::LaserScan & data) {
       estart = false;
       ego = true;
     }
-    if (!estop)
-      pub_esc.publish(throttle);
+    if (!estop) {
+      tmp_uint16.data = throttle;
+      pub_esc.publish(tmp_uint16);
+    }
   }
 
   // Log everything
@@ -193,8 +197,10 @@ void UltimateRacer::exec_estop() {
   estop = true;
   yaw = YAW_MID;
   throttle = ESC_BRAKE;
-  pub_esc.publish(throttle);
-  pub_servo.publish(yaw);
+  tmp_uint16.data = throttle;
+  pub_esc.publish(tmp_uint16);
+  tmp_uint16.data = yaw;
+  pub_servo.publish(tmp_uint16);
 }
 
 

@@ -55,6 +55,8 @@ private:
   float kd;
   float prev_error;
 
+  std_msgs::UInt16 tmp_uint16;
+
   ros::Time time_, old_time_;
   double last_stop_msg_ts;
 
