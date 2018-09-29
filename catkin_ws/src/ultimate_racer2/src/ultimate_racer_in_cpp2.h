@@ -1,5 +1,5 @@
-#ifndef SUPER_RACER
-#define SUPER_RACER
+#ifndef UTLIMATE_RACER
+#define UTLIMATE_RACER
 
 #include <vector>
 #include <math.h> /* floor */
@@ -22,13 +22,14 @@ private:
 
   static constexpr int SLOW_SPEED_CHK_POINTS = 100;
 
-  static constexpr float SAFE_OBSTACLE_DIST1 = 0.5;
-  static constexpr float SAFE_OBSTACLE_DIST2 = 0.17;
+  static constexpr float SAFE_OBSTACLE_DIST1 = 0.6;
+  static constexpr float SAFE_OBSTACLE_DIST2 = 0.25;
   static constexpr float SAFE_OBSTACLE_DIST3 = 0.3;
+  static constexpr float SAFE_OBSTACLE_DIST4 = 2.5;
 
   static constexpr float NON_CONT_DIST = 0.2;
 
-  static constexpr float FAST_DRIVE_DIST = 6.0;
+  static constexpr float FAST_DRIVE_DIST = 7.0;
   static constexpr float MARGIN_DRIVE_FAST = 0.5;
   static constexpr float MARGIN_DRIVE_SLOW = 0.3;
 
@@ -40,9 +41,7 @@ private:
 
   int throttle;
   int yaw;
-  int init_esc;
-  float max_speed;
-  float min_speed;
+  float desired_speed;
   float curr_speed;
   float speed_record;
 
@@ -51,9 +50,17 @@ private:
   bool ego;
 
   // PID controller
-  float kp;
-  float kd;
-  float prev_error;
+  // TODO(MD): throw away once it's not needed
+  // float kp;
+  // float kd;
+  // float prev_error;
+
+  // Naive strategy
+  int slow_esc;
+  int medium_esc;
+  int fast_esc;
+  float drive_medium_thr;
+  float drive_fast_thr;
 
   std_msgs::UInt16 tmp_uint16;
 
@@ -73,15 +80,18 @@ private:
   float steerMAX(std::vector<float> & scan, float margin);
   bool check_if_reachable(float r1, float r2, int alpha, float margin);
   float speed_control(std::vector<float> & scan, int idx, bool nitro);
-  void speed_pid(int desired_speed);
   void exec_estop();
 
 public:
-  UltimateRacer(ros::NodeHandle* nodehandle, float min_speed, float max_speed, int init_esc);
+  UltimateRacer(
+    ros::NodeHandle* nodehandle,
+    int slow_esc, int medium_esc, int fast_esc,
+    float drive_medium_thr, float drive_fast_thr
+  );
   void spd_cb(const std_msgs::Float32 & data);
   void scan_cb(const sensor_msgs::LaserScan & data);
   void estop_cb(const std_msgs::UInt16 & data);
 };
 
 
-#endif // SUPER_RACER
+#endif // UTLIMATE_RACER

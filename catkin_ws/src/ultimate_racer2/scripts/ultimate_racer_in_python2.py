@@ -277,7 +277,7 @@ class move_auto:
         data_to_log = {
             'yaw': self.yaw,
             'throttle': self.throttle,
-            'x': desired_speed_log,
+            'x': self.eStop,
             'delta_between_callbacks': 0,
             'delta_within_callback': 0,
         }

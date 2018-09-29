@@ -20,28 +20,33 @@
 
 UltimateRacer::UltimateRacer(
   ros::NodeHandle* nodehandle,
-  float min_speed,
-  float max_speed,
-  int init_esc
+  int slow_esc,
+  int medium_esc,
+  int fast_esc,
+  float drive_medium_thr=3.5,
+  float drive_fast_thr=5.0
 ) {
 
   nh = *nodehandle;
-  speed_record = 0;
   throttle = 1500;
-  this->init_esc = init_esc;
   yaw = YAW_MID;
-  this->min_speed = min_speed;
-  this->max_speed = max_speed;
+  this->slow_esc = slow_esc;
+  this->medium_esc = medium_esc;
+  this->fast_esc = fast_esc;
+  this->drive_medium_thr = drive_medium_thr;
+  this->drive_fast_thr = drive_fast_thr;
 
   estop = false;
   estart = false;
   ego = false;
 
-  kp = 1.8;
-  kd = 6.0;
-  prev_error = 0.0;
+  // TODO(MD): throw away once not needed
+  // this->kp = kp;
+  // this->kd = kd;
+  // prev_error = 0.0;
 
   curr_speed = 0.0;
+  speed_record = 0.0;
 
   float angle_step = 1. / STEPS_PER_DEGREE;
   for (int i=0; i<NUM_ANGLES_TO_STORE; i++)
@@ -50,7 +55,7 @@ UltimateRacer::UltimateRacer(
   old_time_ = ros::Time::now();
   last_stop_msg_ts = ros::Time::now().toSec();
 
-  pub_esc = nh.advertise<std_msgs::UInt32>(
+  pub_esc = nh.advertise<std_msgs::UInt16>(
     "/esc",
     1
   );
@@ -71,12 +76,13 @@ UltimateRacer::UltimateRacer(
     "/scan",
     1,
     &UltimateRacer::scan_cb,
-    this
+    this,
+    ros::TransportHints().tcpNoDelay()
   );
 
   sub_estop = nh.subscribe(
     "/eStop",
-    1,
+    10,
     &UltimateRacer::estop_cb,
     this
   );
@@ -92,11 +98,6 @@ void UltimateRacer::scan_cb(const sensor_msgs::LaserScan & data) {
   if (time_.toSec() - last_stop_msg_ts > 0.5 && (ego || estart))
     exec_estop();
 
-  // For time measurements
-  double delta_between_callbacks;
-  double delta_within_callback;
-
-
   // Finding the smallest range near the center
   int mid_point = floor(data.ranges.size() / 2.);
   int margin = 20; // TODO: make this a parameter
@@ -108,7 +109,6 @@ void UltimateRacer::scan_cb(const sensor_msgs::LaserScan & data) {
     throttle = ESC_BRAKE;
     tmp_uint16.data = throttle;
     pub_esc.publish(tmp_uint16);
-    // TODO: shouldn't this result in a `return`?
   }
 
   // Clip the values
@@ -123,54 +123,58 @@ void UltimateRacer::scan_cb(const sensor_msgs::LaserScan & data) {
     scan[i] = 10.0;
   for (int i=scan.size()-90; i<scan.size(); i++)
     scan[i] = 10.0;
-
-  bool turbo = false;
+  // TODO: the above three loops can be squashed into one
 
   int idx = steerMAX(scan, MARGIN_DRIVE_FAST);
 
-  float desired_speed = -1000;
-  if (idx == -1 || scan[idx] < FAST_DRIVE_DIST) {
+  if (idx == -1 || scan[idx] < drive_fast_thr || idx > 600 || idx < 480) {
+    // TODO: parametrize those: 600 and 480 as: MID +/- 60
+    // MID should be controlled through a topic of some sorts (or parameter)
     idx = steerMAX(scan, MARGIN_DRIVE_SLOW);
-    if (idx == -1) {
+    if (idx == -1)
       throttle = ESC_BRAKE;
-      desired_speed = 0;
-    } else {
-      desired_speed = speed_control(scan, idx, turbo);
+    else if (idx >= 0 && scan[idx]  < SAFE_OBSTACLE_DIST4)
+      idx = -1;
+    else {
+      if (scan[idx] > drive_medium_thr)
+        throttle = medium_esc;
+      else
+        throttle = slow_esc;
     }
   } else {
-    turbo = true;
-    desired_speed = speed_control(scan, idx, turbo);
+    // The road ahead is clear
+    throttle = fast_esc;
   }
-
-  float desired_speed_log = desired_speed;
 
   float idx2yaw;
   if (idx >= 0) {
     idx2yaw = 1.0 * idx / scan.size() - 0.5;
-    idx2yaw = 1.2*idx2yaw;
+    // TODO(MD): parametrize 1.2
+    idx2yaw = 1.4*idx2yaw;
     idx2yaw = idx2yaw < -0.5 ? -0.5 : idx2yaw > 0.5 ? 0.5 : idx2yaw;
     yaw = floor(idx2yaw * YAW_RANGE + YAW_MID);
   }
 
-  if (ego || estart) {
-    speed_pid(desired_speed);
-    if (estart) {
-      throttle = init_esc;
-      estart = false;
-      ego = true;
-    }
-    if (!estop) {
-      tmp_uint16.data = throttle;
-      pub_esc.publish(tmp_uint16);
-    }
+  if (estart && !estop and idx >= 0) {
+    tmp_uint16.data = throttle;
+    pub_esc.publish(tmp_uint16);
+    tmp_uint16.data = yaw;
+    pub_servo.publish(tmp_uint16);
+  } else {
+    throttle = ESC_BRAKE;
+    tmp_uint16.data = throttle;
+    pub_esc.publish(tmp_uint16);
   }
 
+  if (curr_speed > speed_record)
+    speed_record = curr_speed;
+
   // Log everything
-  delta_between_callbacks = time_.toSec() - old_time_.toSec();
-  delta_within_callback = ros::Time::now().toSec() - time_.toSec();
-  ROS_INFO(
-    "yaw: %d throttle: %d x: %.4f delta_between_callbacks: %.4f delta_within_callback: %.4f",
-    yaw, throttle, desired_speed_log, delta_between_callbacks, delta_within_callback
+  double delta_between_callbacks = time_.toSec() - old_time_.toSec();
+  double delta_within_callback = ros::Time::now().toSec() - time_.toSec();
+  ROS_WARN(
+    "yaw: %d throttle: %d x: %d delta_between_callbacks: %.4f delta_within_callback: %.4f",
+    yaw, throttle, estop, delta_between_callbacks, delta_within_callback
   );
 
   old_time_ = time_;
@@ -182,11 +186,7 @@ void UltimateRacer::estop_cb(const std_msgs::UInt16 & data) {
   if (data.data == 0) {
     ROS_WARN("Emergency stop!");
     exec_estop();
-  }
-  else if (data.data == 1) {
-    ROS_WARN("Reset!");
-    estop = false;
-  } else if (data.data == 2) {
+  } else if (data.data == 2309) {
     ROS_WARN("GO!");
     estart = true;
   }
@@ -204,50 +204,7 @@ void UltimateRacer::exec_estop() {
 }
 
 
-float UltimateRacer::speed_control(std::vector<float> & scan, int idx, bool nitro) {
-    float speed = -1000;
-    if (nitro) {
-      speed = scan[idx];
-    } else {
-      int left_limit = std::max(idx-SLOW_SPEED_CHK_POINTS, 0);
-      int right_limit = std::min(int(scan.size()-1), idx+SLOW_SPEED_CHK_POINTS);
-      speed = *std::min_element(
-        scan.begin() + left_limit,
-        scan.begin() + right_limit
-      );
-      speed = 1.5*speed;
-    }
-    return speed;
-}
-
-
-void UltimateRacer::speed_pid(int desired_speed) {
-  // TODO: clip this
-  float dspeed;
-  if (desired_speed > max_speed)
-    dspeed = max_speed;
-  else if (desired_speed < min_speed)
-    dspeed = min_speed;
-  else
-    dspeed = desired_speed;
-
-  float pid_error = dspeed - curr_speed;
-  float error = kp * pid_error;
-  float errordot = kd * (pid_error - prev_error);
-
-  float speed_delta = error + errordot;
-  prev_error = pid_error;
-
-  if (throttle == ESC_BRAKE && speed_delta > 0)
-    throttle = ESC_MIN;
-
-  throttle += speed_delta;
-
-  throttle = throttle < 1000 ? 1000 : throttle > 2000 ? 2000 : throttle;
-}
-
-
-float UltimateRacer::steerMAX(std::vector<float> & scan, float margin) {
+float UltimateRacer::steerMAX(std::vector<float> & scan, float width_margin) {
   float min_scan = *std::min_element(scan.begin(), scan.end());
   if (min_scan <= SAFE_OBSTACLE_DIST2)
     return -1;
@@ -284,7 +241,13 @@ float UltimateRacer::steerMAX(std::vector<float> & scan, float margin) {
 
     for (auto s : segs) {
       if (s != idx) {
-        bool could_be_reached = check_if_reachable(scan[idx], scan[s], std::abs(s-idx), margin);
+        bool could_be_reached = check_if_reachable(
+          scan[idx],
+          scan[s],
+          std::abs(s-idx),
+          width_margin
+        );
+
         if (!could_be_reached) {
           int left_limit = std::max(0, idx-5);
           int right_limit = std::min(idx+5, int(scan2.size()-1));
@@ -307,12 +270,12 @@ float UltimateRacer::steerMAX(std::vector<float> & scan, float margin) {
 }
 
 
-bool UltimateRacer::check_if_reachable(float r1, float r2, int alpha, float margin) {
+bool UltimateRacer::check_if_reachable(float r1, float r2, int alpha, float width_margin) {
   // if (SAFE_OBSTACLE_DIST1 < r1 < r2 + SAFE_OBSTACLE_DIST1)
   if (r1 - SAFE_OBSTACLE_DIST2 < r2 && r1 > SAFE_OBSTACLE_DIST2 )
     return true;
   else
-    return (r2*sin_alpha[alpha] > margin);
+    return (r2*sin_alpha[alpha] > width_margin);
 }
 
 
@@ -321,10 +284,38 @@ int main(int argc, char **argv) {
   ros::init(argc, argv, "ultimate_racer_in_cpp2");
 
   ros::NodeHandle nh;
-  float min_speed = 0.5;
-  float max_speed = 6.0;
-  int init_esc = 1580;
-  UltimateRacer racer(&nh, min_speed, max_speed, init_esc);
+  int slow_esc;
+  int medium_esc;
+  int fast_esc;
+  float drive_medium_thr;
+  float drive_fast_thr;
+
+  if (argc == 6) {
+    slow_esc = atoi(argv[1]);
+    medium_esc = atoi(argv[2]);
+    fast_esc = atoi(argv[3]);
+    drive_medium_thr = atof(argv[4]);
+    drive_fast_thr = atof(argv[5]);
+  } else {
+    slow_esc = 1555;
+    medium_esc = 1560;
+    fast_esc = 1565;
+    drive_medium_thr = 3.5;
+    drive_fast_thr = 5.0;
+  }
+
+  std::cout << "slow_esc: " << slow_esc
+            << " medium_esc: " << medium_esc
+            << " fast_esc: " << fast_esc
+            << " drive_medium_thr: " << drive_medium_thr
+            << " drive_fast_thr: " << drive_fast_thr
+            << std::endl;
+
+  UltimateRacer racer(
+    &nh,
+    slow_esc, medium_esc, fast_esc,
+    drive_medium_thr=drive_medium_thr, drive_fast_thr=drive_fast_thr
+  );
 
   ros::Rate loop_rate(40);
 
