@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<launch>
+  <arg name="map_topic" default="/map" />
+
+  <node name="map_server" pkg="map_server" type="map_server" args="/home/karol/projects/cufix/F1tenth/repo/datasets/dataset010/map_hotel.yaml" output="screen">
+    <remap from="map" to="$(arg map_topic)"/>
+    <param name="frame_id" value="$(arg map_topic)"/>
+  </node>
+</launch>

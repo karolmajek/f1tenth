@@ -1,0 +1,92 @@
+<launch>
+  <!-- <node pkg="tf" type="static_transform_publisher" name="tf_laser" args="0 0 0   0 0 0 base_link laser 0.002"/> -->
+  <!-- <node pkg="tf" type="static_transform_publisher" name="tf_laser" args="0 0 0   0 0 3.14 base_link laser 0.002"/> -->
+
+
+  <param name="robot_description"
+    textfile="/home/karol/projects/cufix/F1tenth/repo/launch/dzik.urdf" />
+
+  <node name="robot_state_publisher" pkg="robot_state_publisher"
+    type="robot_state_publisher" />
+
+
+  <!-- <node pkg="message_to_tf" type="message_to_tf" name="message_to_tf" output="screen">
+    <param name="odometry_topic" value="/odom"/>
+  </node> -->
+
+  <arg name="scan_topic" default="/scan" />
+  <arg name="map_topic" default="/map" />
+  <!-- <arg name="map_topic" default="/map_gmapping" /> -->
+
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+
+      <param name="odom_frame" value="odom"/>
+      <param name="base_frame" value="base_link"/>
+      <param name="map_frame" value="map"/>
+      <!-- <param name="map_frame" value="map_gmapping"/> -->
+
+      <!-- Process 1 out of every this many scans (set it to a higher number to skip more scans)  -->
+      <param name="throttle_scans" value="1"/>
+
+      <param name="map_update_interval" value="1.0"/> <!-- default: 5.0 -->
+
+      <!-- The maximum usable range of the laser. A beam is cropped to this value.  -->
+      <param name="maxUrange" value="65.0"/>
+
+      <!-- The maximum range of the sensor. If regions with no obstacles within the range of the sensor should appear as free space in the map, set maxUrange < maximum range of the real sensor <= maxRange -->
+      <param name="maxRange" value="30.0"/>
+
+      <param name="sigma" value="0.05"/>
+      <param name="kernelSize" value="1"/>
+      <!-- The optimization step in translation -->
+      <param name="lstep" value="0.05"/>
+      <!-- The optimization step in rotation -->
+      <param name="astep" value="0.05"/>
+      <param name="iterations" value="30"/>
+      <!-- The sigma of a beam used for likelihood computation -->
+      <param name="lsigma" value="0.075"/>
+      <!--Gain to be used while evaluating the likelihood, for smoothing the resampling effects-->
+      <param name="ogain" value="1.0"/>
+      <param name="minimumScore" value="0"/>
+      <!-- Number of beams to skip in each scan. -->
+      <param name="lskip" value="0"/>
+
+      <!-- Odometry error in translation as a function of translation (rho/rho) -->
+      <param name="srr" value="0.01"/>
+      <param name="srt" value="0.05"/>
+      <param name="str" value="0.05"/>
+      <param name="stt" value="0.5"/>
+
+      <!-- Process a scan each time the robot translates this far  -->
+      <param name="linearUpdate" value="0.2"/>
+
+      <!-- Process a scan each time the robot rotates this far  -->
+      <param name="angularUpdate" value="0.01"/>
+
+      <param name="temporalUpdate" value="-1.0"/>
+      <!-- The Neff based resampling threshold -->
+      <param name="resampleThreshold" value="0.5"/>
+
+      <!-- Number of particles in the filter. default 30        -->
+      <param name="particles" value="20"/>
+
+  <!-- Initial map size  -->
+      <param name="xmin" value="-15.0"/>
+      <param name="ymin" value="-15.0"/>
+      <param name="xmax" value="15.0"/>
+      <param name="ymax" value="15.0"/>
+
+      <!-- Processing parameters (resolution of the map)  -->
+      <param name="delta" value="0.025"/>
+
+      <!-- Translational sampling range for the likelihood -->
+      <param name="llsamplerange" value="2.0"/>
+      <param name="llsamplestep" value="0.05"/>
+      <param name="lasamplerange" value="0.5"/>
+      <!-- Angular sampling step for the likelihood -->
+      <param name="lasamplestep" value="0.01"/>
+
+      <remap from="scan" to="$(arg scan_topic)"/>
+      <remap from="map" to="$(arg map_topic)"/>
+    </node>
+  </launch>

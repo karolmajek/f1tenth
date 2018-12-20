@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+
+<launch>
+  <arg name="tf_map_scanmatch_transform_frame_name" default="scanmatcher_frame"/>
+  <arg name="base_frame" default="laser"/>
+  <arg name="odom_frame" default="laser"/>
+  <arg name="pub_map_odom_transform" default="true"/>
+  <arg name="scan_subscriber_queue_size" default="50"/>
+  <arg name="scan_topic" default="scan"/>
+  <arg name="map_size" default="4096"/>
+
+  <node pkg="hector_mapping" type="hector_mapping" name="hector_mapping" output="screen">
+
+    <!-- Frame names -->
+    <param name="map_frame" value="world" />
+    <param name="base_frame" value="$(arg base_frame)" />
+    <param name="odom_frame" value="$(arg odom_frame)" />
+
+    <!-- Tf use -->
+    <param name="use_tf_scan_transformation" value="true"/>
+    <param name="use_tf_pose_start_estimate" value="false"/>
+    <param name="pub_map_odom_transform" value="$(arg pub_map_odom_transform)"/>
+
+    <!-- Map size / start point -->
+    <param name="map_resolution" value="0.010"/>
+    <param name="map_size" value="$(arg map_size)"/>
+    <param name="map_start_x" value="0.5"/>
+    <param name="map_start_y" value="0.5" />
+    <param name="map_multi_res_levels" value="4" />
+
+    <!-- Map update parameters -->
+    <param name="update_factor_free" value="0.4"/>
+    <param name="update_factor_occupied" value="0.9" />
+    <param name="map_update_distance_thresh" value="0.01"/>
+    <param name="map_update_angle_thresh" value="0.01" />
+    <param name="laser_z_min_value" value = "-1.0" />
+    <param name="laser_z_max_value" value = "1.0" />
+
+    <!-- Advertising config -->
+    <param name="advertise_map_service" value="true"/>
+
+    <param name="scan_subscriber_queue_size" value="$(arg scan_subscriber_queue_size)"/>
+    <param name="scan_topic" value="$(arg scan_topic)"/>
+
+    <!-- Debug parameters -->
+    <!--
+      <param name="output_timing" value="false"/>
+      <param name="pub_drawings" value="true"/>
+      <param name="pub_debug_output" value="true"/>
+    -->
+    <param name="tf_map_scanmatch_transform_frame_name" value="$(arg tf_map_scanmatch_transform_frame_name)" />
+    <remap from="map" to="hmap"/>
+
+  </node>
+
+  <!--<node pkg="tf" type="static_transform_publisher" name="map_nav_broadcaster" args="0 0 0 0 0 0 map nav 100"/>-->
+
+
+    <arg name="scan_topic_gmap" default="/scan" />
+
+    <node pkg="gmapping" type="slam_gmapping" name="slam_gmapping" output="screen">
+
+      <param name="odom_frame" value="world"/>
+      <param name="base_frame" value="laser"/>
+      <param name="map_frame" value="map"/>
+
+      <!-- Process 1 out of every this many scans (set it to a higher number to skip more scans)  -->
+      <param name="throttle_scans" value="1"/>
+
+      <param name="map_update_interval" value="1.0"/> <!-- default: 5.0 -->
+
+      <!-- The maximum usable range of the laser. A beam is cropped to this value.  -->
+      <param name="maxUrange" value="15.0"/>
+
+      <!-- The maximum range of the sensor. If regions with no obstacles within the range of the sensor should appear as free space in the map, set maxUrange < maximum range of the real sensor <= maxRange -->
+      <param name="maxRange" value="20.0"/>
+
+      <param name="sigma" value="0.05"/>
+      <param name="kernelSize" value="3"/>
+      <param name="lstep" value="0.025"/>
+      <param name="astep" value="0.025"/>
+      <param name="iterations" value="100"/>
+      <param name="lsigma" value="0.1"/>
+      <param name="ogain" value="3.0"/>
+      <param name="minimumScore" value="50"/> <!--was 0 -->
+      <!-- Number of beams to skip in each scan. -->
+      <param name="lskip" value="5"/>
+
+      <param name="srr" value="0.01"/>
+      <param name="srt" value="0.02"/>
+      <param name="str" value="0.01"/>
+      <param name="stt" value="0.05"/>
+
+      <!-- Process a scan each time the robot translates this far  -->
+      <param name="linearUpdate" value="0.05"/>
+
+      <!-- Process a scan each time the robot rotates this far  -->
+      <param name="angularUpdate" value="0.01"/>
+
+      <param name="temporalUpdate" value="-1.0"/>
+      <param name="resampleThreshold" value="0.2"/>
+
+      <!-- Number of particles in the filter. default 30        -->
+      <param name="particles" value="100"/>
+
+  <!-- Initial map size  -->
+      <param name="xmin" value="-20.0"/>
+      <param name="ymin" value="-20.0"/>
+      <param name="xmax" value="20.0"/>
+      <param name="ymax" value="20.0"/>
+
+      <!-- Processing parameters (resolution of the map)  -->
+      <param name="delta" value="0.05"/>
+
+      <param name="llsamplerange" value="0.01"/>
+      <param name="llsamplestep" value="0.01"/>
+      <param name="lasamplerange" value="0.01"/>
+      <param name="lasamplestep" value="0.01"/>
+
+      <remap from="scan" to="$(arg scan_topic_gmap)"/>
+    </node>
+
+</launch>

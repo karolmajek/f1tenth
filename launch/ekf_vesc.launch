@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="robot_localization" type="ekf_localization_node" name="ekf_vesc" clear_params="true">
+    <rosparam command="load" file="ekf_vesc.yaml" />
+  </node>
+</launch>
