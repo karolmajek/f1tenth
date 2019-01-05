@@ -54,3 +54,7 @@ CATKIN_IGNORE
 ############################
 *.p
 *.csv
+
+.idea
+.ipynb_checkpoints
+compare_implementations/*output

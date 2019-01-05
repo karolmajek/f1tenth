@@ -1,0 +1,156 @@
+#!/usr/bin/env python2.7
+
+from __future__ import division
+
+import numpy as np
+import math
+
+import rospy
+from mavros_msgs.msg import OverrideRCIn
+from mavros_msgs.srv import SetMode
+from sensor_msgs.msg import LaserScan
+
+
+class SuperRacer:
+    YAW_MID = 1570
+    THROTTLE_CHANNEL = 2
+    STEER_CHANNEL = 0
+    NUM_PNTS_TO_STORE = 1080
+    NUM_PNTS_TO_CHK = 20
+    SAFE_OBSTACLE_DIST1 = 0.3
+    SAFE_OBSTACLE_DIST2 = 0.3
+    NON_CONT_DIST = 0.1  # key perf vs acc parameter
+
+    def __init__(self):
+        self.throttle = 0
+        self.yaw = self.YAW_MID
+
+        # An array of cached `sin` values (greatly increases performance)
+        self.sin_alpha = np.zeros(self.NUM_PNTS_TO_STORE)
+        for i in range(self.NUM_PNTS_TO_STORE):
+            self.sin_alpha[i] = math.sin(math.radians((i+1)*0.25))
+
+        self.old_time = rospy.Time.now()
+
+        # ROS-related
+        self.msg = OverrideRCIn()
+
+        self.pub = rospy.Publisher('mavros/rc/override',
+                                   OverrideRCIn,
+                                   queue_size=5)
+
+        self.sub = rospy.Subscriber('/scan',
+                                    LaserScan,
+                                    self.laser_cb,
+                                    queue_size=1)
+
+    def laser_cb(self, data):
+        self.time = rospy.Time.now()
+
+        scan = np.array(data.ranges[180:-180])
+        scan = np.clip(scan, 0, 10)
+
+        self.yaw = self.steerMAX(scan)
+
+        self.msg.channels[self.THROTTLE_CHANNEL] = self.throttle
+        self.msg.channels[self.STEER_CHANNEL] = self.yaw
+        self.pub.publish(self.msg)
+
+        # Log everything
+        delta_between_callbacks = (
+            self.time.to_nsec() - self.old_time.to_nsec()
+        ) / 10**9
+        delta_within_callback = (
+            rospy.Time().now().to_nsec() - self.time.to_nsec()
+        ) / 10**9
+        data_to_log = {
+            'yaw': self.yaw,
+            'throttle': self.throttle,
+            'delta_between_callbacks': delta_between_callbacks,
+            'delta_within_callback': delta_within_callback,
+        }
+        rospy.loginfo(
+            'yaw: {yaw:.4f}'
+            ' throttle: {throttle:.4f}'
+            ' delta_between_callbacks: {delta_between_callbacks:.4f}'
+            ' delta_within_callback: {delta_within_callback:.4f}'
+            .format(**data_to_log)
+        )
+        self.old_time = self.time
+
+    def steerMAX(self, scan):
+        scan2 = np.copy(scan)
+
+        idx = 0
+        is_reachable = False
+
+        segs = [0, len(scan)-1]
+        for i in range(1, len(scan)):
+            if abs(scan[i]-scan[i-1]) > self.NON_CONT_DIST:
+                segs.append(i)
+                segs.append(i-1)
+
+        while not is_reachable:
+            idx = np.argmax(scan2)
+            for s in segs:
+                if s != idx:
+                    if not self.check_if_reachable(scan[idx], scan[s], abs(s-idx)):
+                        scan2[idx] = -1
+                        break
+            if scan2[idx] != -1:
+                is_reachable = True
+
+        yaw = idx / len(scan) - 0.5
+
+        # Clip the yaw
+        yaw = np.clip(yaw, -0.5, 0.5)
+
+        return int(yaw*1200) + self.YAW_MID
+
+    def check_if_reachable(self, r1, r2, alpha):
+        # TODO(MD): Review this method
+        if r1-self.SAFE_OBSTACLE_DIST1 < r2:
+            return True
+        else:
+            return (r2*self.sin_alpha[alpha] > self.SAFE_OBSTACLE_DIST2)
+
+    def check_if_continous(self, scan, angle):
+        segment_length = 20
+        r_prev = scan[0]
+        index = 0
+        apex_cands = []
+        apex_cnt = 0
+
+        for r in scan:
+            if (abs(r-r_prev) > 1.0 and index > segment_length and index < len(scan)-segment_length and min(r, r_prev) < 3.0):
+                apex_cands.append(index)
+            index += 1
+            r_prev = r
+
+        for i in apex_cands:
+            flag = 1
+            for j in range(1, self.NUM_PNTS_TO_CHK):
+                if (abs(scan[i-1-j]-scan[i-1-j-1]) > 0.4 or abs(scan[i+1+j]-scan[i+1+j-1]) > 0.4):
+                    flag = 0
+            if flag == 1:
+                apex_cnt += 1
+
+        if apex_cnt > 0 or scan[540] < 1.0:
+            return False
+        else:
+            return True
+
+
+if __name__ == '__main__':
+    rospy.init_node('super_racer_in_python')
+    SuperRacer()
+
+    rospy.wait_for_service('/mavros/set_mode')
+    change_mode = rospy.ServiceProxy('/mavros/set_mode', SetMode)
+
+    answer = change_mode(custom_mode='manual')
+    print(answer)
+
+    rospy.Rate(40)
+
+    rospy.spin()
